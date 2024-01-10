@@ -20,7 +20,7 @@ from src.hydra.utils.utils import update_transaction_counter
 
 
 transaction_b = []
-
+# check
 # debugpy.listen(5678)
 # debugpy.wait_for_client()
 
