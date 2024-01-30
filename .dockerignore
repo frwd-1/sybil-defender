@@ -4,3 +4,4 @@ node_modules
 forta.config.json
 .env
 apollo
+dataextract
