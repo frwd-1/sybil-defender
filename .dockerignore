@@ -5,3 +5,4 @@ forta.config.json
 .env
 apollo
 dataextract
+neo4j
