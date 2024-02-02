@@ -10,6 +10,7 @@ from src.hydra.database_controllers.db_utils import (
     add_transactions_b_to_db,
     remove_processed_transfers,
     remove_processed_contract_transactions,
+    add_transactions_to_neo4j,
 )
 
 from src.hydra.process.process import process_transactions
@@ -18,6 +19,7 @@ from src.hydra.utils import globals
 from src.constants import N, B_SIZE
 from src.hydra.utils.utils import update_transaction_counter
 
+from src.config import DATABASE_TYPE
 
 transaction_b = []
 # check
@@ -40,9 +42,6 @@ def handle_transaction(transaction_event: TransactionEvent):
     )
 
 
-# test
-
-
 async def handle_transaction_async(
     transaction_event: TransactionEvent, network_name: str
 ):
@@ -56,12 +55,19 @@ async def handle_transaction_async(
     transaction_b.append(transaction_event)
     print("batch size is:", len(transaction_b))
     if len(transaction_b) >= B_SIZE:
-        async with get_async_session(network_name) as session:
+        if DATABASE_TYPE == "local":
+            async with get_async_session(network_name) as session:
+                try:
+                    await add_transactions_b_to_db(session, transaction_b)
+                    print(f"{B_SIZE} transactions committed to the local database")
+                except Exception as e:
+                    print(f"An error occurred in local DB: {e}")
+        elif DATABASE_TYPE == "neo4j":
             try:
-                await add_transactions_b_to_db(session, transaction_b)
-                print(f"{B_SIZE} transactions committed to the database")
+                await add_transactions_to_neo4j(transaction_b)
+                print(f"{B_SIZE} transactions committed to Neo4j")
             except Exception as e:
-                print(f"An error occurred: {e}")
+                print(f"An error occurred in Neo4j: {e}")
 
         transaction_b.clear()
 
@@ -73,8 +79,9 @@ async def handle_transaction_async(
         print("processing transactions")
         findings.extend(await process_transactions(network_name))
 
-        await remove_processed_transfers(network_name)
-        await remove_processed_contract_transactions(network_name)
+        if DATABASE_TYPE == "local":
+            await remove_processed_transfers(network_name)
+            await remove_processed_contract_transactions(network_name)
 
         globals.transaction_counter = 0
         print("ALL COMPLETE")
