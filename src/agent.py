@@ -13,7 +13,10 @@ from src.hydra.database_controllers.db_utils import (
     add_transactions_to_neo4j,
 )
 
-from src.hydra.process.process import process_transactions
+from src.hydra.process.process import (
+    process_transactions,
+    detect_and_assign_communities_WCC,
+)
 from src.hydra.heuristics.initial_heuristics import apply_initial_heuristics
 from src.hydra.utils import globals
 from src.constants import N, B_SIZE
@@ -76,12 +79,16 @@ async def handle_transaction_async(
     print("transaction counter is", globals.transaction_counter)
     print("current block is...", transaction_event.block_number)
     if globals.transaction_counter >= N:
-        print("processing transactions")
-        findings.extend(await process_transactions(network_name))
 
         if DATABASE_TYPE == "local":
+            print("processing transactions")
+            findings.extend(await process_transactions(network_name))
             await remove_processed_transfers(network_name)
             await remove_processed_contract_transactions(network_name)
+
+        elif DATABASE_TYPE == "neo4j":
+            print("identifying neo4j communities")
+            await detect_and_assign_communities_WCC()
 
         globals.transaction_counter = 0
         print("ALL COMPLETE")
