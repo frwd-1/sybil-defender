@@ -11,6 +11,7 @@ from src.hydra.database_controllers.db_utils import (
     remove_processed_transfers,
     remove_processed_contract_transactions,
     add_transactions_to_neo4j,
+    publish_transactions_to_kafka,
 )
 
 from src.hydra.process.process import (
@@ -71,6 +72,12 @@ async def handle_transaction_async(
                 print(f"{B_SIZE} transactions committed to Neo4j")
             except Exception as e:
                 print(f"An error occurred in Neo4j: {e}")
+        elif DATABASE_TYPE == "neo4jkafka":
+            try:
+                await publish_transactions_to_kafka(transaction_b)
+                print(f"{B_SIZE} transactions committed to Kafka")
+            except Exception as e:
+                print(f"An error occurred in Kafka: {e}")
 
         transaction_b.clear()
 
