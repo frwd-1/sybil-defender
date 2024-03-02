@@ -97,6 +97,10 @@ async def handle_transaction_async(
             print("identifying neo4j communities")
             await detect_and_assign_communities_WCC()
 
+        # elif DATABASE_TYPE == "neo4jkafka":
+        #     print("identifying neo4j communities")
+        #     await detect_and_assign_communities_WCC()
+
         globals.transaction_counter = 0
         print("ALL COMPLETE")
         return findings
