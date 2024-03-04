@@ -36,10 +36,11 @@ def handle_transaction(transaction_event: TransactionEvent):
     loop = asyncio.get_event_loop()
     network_name = transaction_event.network.name
 
-    if not loop.is_running():
-        loop.run_until_complete(initialize_database(network_name))
-    else:
-        loop.create_task(initialize_database(network_name))
+    if DATABASE_TYPE != "neo4jkafka":
+        if not loop.is_running():
+            loop.run_until_complete(initialize_database(network_name))
+        else:
+            loop.create_task(initialize_database(network_name))
 
     return loop.run_until_complete(
         handle_transaction_async(transaction_event, network_name)
@@ -56,30 +57,31 @@ async def handle_transaction_async(
     if not await apply_initial_heuristics(transaction_event):
         return []
 
-    transaction_b.append(transaction_event)
-    print("batch size is:", len(transaction_b))
-    if len(transaction_b) >= B_SIZE:
-        if DATABASE_TYPE == "local":
-            async with get_async_session(network_name) as session:
+    if DATABASE_TYPE == "neo4jkafka":
+        try:
+            await publish_transactions_to_kafka(transaction_event)
+            print(f"transaction committed to Kafka")
+        except Exception as e:
+            print(f"An error occurred in Kafka: {e}")
+    else:
+        transaction_b.append(transaction_event)
+        print("batch size is:", len(transaction_b))
+        if len(transaction_b) >= B_SIZE:
+            if DATABASE_TYPE == "local":
+                async with get_async_session(network_name) as session:
+                    try:
+                        await add_transactions_b_to_db(session, transaction_b)
+                        print(f"{B_SIZE} transactions committed to the local database")
+                    except Exception as e:
+                        print(f"An error occurred in local DB: {e}")
+            elif DATABASE_TYPE == "neo4j":
                 try:
-                    await add_transactions_b_to_db(session, transaction_b)
-                    print(f"{B_SIZE} transactions committed to the local database")
+                    await add_transactions_to_neo4j(transaction_b)
+                    print(f"{B_SIZE} transactions committed to Neo4j")
                 except Exception as e:
-                    print(f"An error occurred in local DB: {e}")
-        elif DATABASE_TYPE == "neo4j":
-            try:
-                await add_transactions_to_neo4j(transaction_b)
-                print(f"{B_SIZE} transactions committed to Neo4j")
-            except Exception as e:
-                print(f"An error occurred in Neo4j: {e}")
-        elif DATABASE_TYPE == "neo4jkafka":
-            try:
-                await publish_transactions_to_kafka(transaction_b)
-                print(f"{B_SIZE} transactions committed to Kafka")
-            except Exception as e:
-                print(f"An error occurred in Kafka: {e}")
+                    print(f"An error occurred in Neo4j: {e}")
 
-        transaction_b.clear()
+            transaction_b.clear()
 
     update_transaction_counter()
 
@@ -94,12 +96,12 @@ async def handle_transaction_async(
             await remove_processed_contract_transactions(network_name)
 
         elif DATABASE_TYPE == "neo4j":
-            print("identifying neo4j communities")
+            print("identifying neo4j communities (batch workflow)")
             await detect_and_assign_communities_WCC()
 
-        # elif DATABASE_TYPE == "neo4jkafka":
-        #     print("identifying neo4j communities")
-        #     await detect_and_assign_communities_WCC()
+        elif DATABASE_TYPE == "neo4jkafka":
+            print("identifying neo4j communities (kafka workflow)")
+            await detect_and_assign_communities_WCC()
 
         globals.transaction_counter = 0
         print("ALL COMPLETE")

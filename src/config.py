@@ -1,5 +1,8 @@
-# Configuration for choosing the database
+# Configuration for choosing the database and mode
 # Set DATABASE_TYPE to 'local' for local database or 'neo4j' for Neo4j database
+# Set MODE to 'test' for testing or 'production' for production
 
-# local or neo4j or neo4jkafka
+# local | neo4j | neo4jkafka
 DATABASE_TYPE = "neo4jkafka"
+# test | production
+MODE = "test"
