@@ -3,6 +3,6 @@
 # Set MODE to 'test' for testing or 'production' for production
 
 # local | neo4j | neo4jkafka
-DATABASE_TYPE = "neo4jkafka"
+DATABASE_TYPE = "local"
 # test | production
 MODE = "test"
