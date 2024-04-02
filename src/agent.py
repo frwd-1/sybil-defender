@@ -70,6 +70,7 @@ async def handle_transaction_async(
             if DATABASE_TYPE == "local":
                 async with get_async_session(network_name) as session:
                     try:
+                        # debugpy.wait_for_client()
                         await add_transactions_b_to_db(session, transaction_b)
                         print(f"{B_SIZE} transactions committed to the local database")
                     except Exception as e:
