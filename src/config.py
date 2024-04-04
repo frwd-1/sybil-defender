@@ -5,4 +5,4 @@
 # local | neo4j | neo4jkafka
 DATABASE_TYPE = "local"
 # test | production
-MODE = "test"
+MODE = "production"
