@@ -1,5 +1,6 @@
 import asyncio
 import debugpy
+from flask import Flask, request, jsonify
 
 from forta_agent import TransactionEvent
 
@@ -23,6 +24,9 @@ from src.hydra.utils import globals
 from src.constants import N, B_SIZE
 from src.hydra.utils.utils import update_transaction_counter
 
+app = Flask(__name__)
+
+
 # from src.config import DATABASE_TYPE
 
 DATABASE_TYPE = "local"
@@ -31,6 +35,17 @@ transaction_b = []
 # check
 # debugpy.listen(5678)
 # debugpy.wait_for_client()
+
+
+@app.route("/transaction", methods=["POST"])
+def transaction():
+    data = request.get_json()
+    asyncio.run(handle_transaction(data))
+    return jsonify({"status": "success"})
+
+
+if __name__ == "__main__":
+    app.run(port=5000)
 
 
 def handle_transaction(transaction_event: TransactionEvent):
