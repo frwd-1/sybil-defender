@@ -11,13 +11,14 @@
     1
   ],
   "scripts": {
+    "preprocess": "node preprocess-config.js",
     "postinstall": "python3 -m pip install -r requirements_dev.txt",
     "start": "npm --max-old-space-size=32768 run start:dev",
     "start:dev": "NODE_OPTIONS='--max-old-space-size=8196' nodemon --watch dist/src --watch forta.config.json -e py --exec \"forta-agent run\"",
     "start:prod": "forta-agent run --prod",
     "tx": "forta-agent run --tx",
     "block": "forta-agent run --block",
-    "range": "forta-agent run --range",
+    "range": "npm run preprocess && NODE_OPTIONS=--max-old-space-size=32768 JSON_RPC_URL=$JSON_RPC_URL NETWORK_NAME=$NETWORK_NAME forta-agent run --range",
     "alert": "forta-agent run --alert",
     "sequence": "forta-agent run --sequence",
     "file": "forta-agent run --file",

@@ -1,24 +1,16 @@
 import asyncio
-import debugpy
 from flask import Flask, request, jsonify
-
 from forta_agent import TransactionEvent
 
 from src.hydra.database_controllers.db_controller import initialize_database
-
 from src.hydra.database_controllers.db_controller import get_async_session
 from src.hydra.database_controllers.db_utils import (
     add_transactions_b_to_db,
     remove_processed_transfers,
     remove_processed_contract_transactions,
-    # add_transactions_to_neo4j,
-    # publish_transactions_to_kafka,
 )
 
-from src.hydra.process.process import (
-    process_transactions,
-    # detect_and_assign_communities_WCC,
-)
+from src.hydra.process.process import process_transactions
 from src.hydra.heuristics.initial_heuristics import apply_initial_heuristics
 from src.hydra.utils import globals
 from src.constants import N, B_SIZE
@@ -26,15 +18,8 @@ from src.hydra.utils.utils import update_transaction_counter
 
 app = Flask(__name__)
 
-
-# from src.config import DATABASE_TYPE
-
 DATABASE_TYPE = "local"
-
 transaction_b = []
-# check
-# debugpy.listen(5678)
-# debugpy.wait_for_client()
 
 
 @app.route("/transaction", methods=["POST"])
@@ -91,12 +76,6 @@ async def handle_transaction_async(
                         print(f"{B_SIZE} transactions committed to the local database")
                     except Exception as e:
                         print(f"An error occurred in local DB: {e}")
-            # elif DATABASE_TYPE == "neo4j":
-            #     try:
-            #         await add_transactions_to_neo4j(transaction_b)
-            #         print(f"{B_SIZE} transactions committed to Neo4j")
-            #     except Exception as e:
-            #         print(f"An error occurred in Neo4j: {e}")
 
             transaction_b.clear()
 
@@ -111,14 +90,6 @@ async def handle_transaction_async(
             findings.extend(await process_transactions(network_name))
             await remove_processed_transfers(network_name)
             await remove_processed_contract_transactions(network_name)
-
-        # elif DATABASE_TYPE == "neo4j":
-        #     print("identifying neo4j communities (batch workflow)")
-        #     await detect_and_assign_communities_WCC()
-
-        # elif DATABASE_TYPE == "neo4jkafka":
-        #     print("identifying neo4j communities (kafka workflow)")
-        #     await detect_and_assign_communities_WCC()
 
         globals.transaction_counter = 0
         print("ALL COMPLETE")
