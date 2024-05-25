@@ -29,7 +29,19 @@ January 21, 2024 - on the Fantom blockchain, Funder Wallet (0x87efcda3e6f46916bc
 <table>
   <tr>
     <td>
-      <img src="./images/LZ1.png" width="300" height="200">
+      <img src="./images/LZ1.png" width="600" height="400">
+    </td>
+  </tr>
+</table>
+
+All funded wallets subsequently engage in the same sequence of contract interactions, calling the same methods on the same contracts in a very short period of time.
+
+For example, on 2024-01-21 20:28:16, Funded Wallet #1 (0xdDdDF9454429d0f8838A10C5C28Dd8C0B92488a7) receives ~1,003 USDC from a Stargate Finance LP contract.
+
+<table>
+  <tr>
+    <td>
+      <img src="./images/LZ2.png" width="600" height="400">
     </td>
   </tr>
 </table>
