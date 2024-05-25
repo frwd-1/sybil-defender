@@ -46,6 +46,16 @@ For example, on 2024-01-21 20:28:16, Funded Wallet #1 (0xdDdDF9454429d0f8838A10C
   </tr>
 </table>
 
+2 minutes later at 20:37:09, Funded Wallet #1 receives 10 FTM from the Funder Wallet. 2 minutes later at 20:39:24, Funded Wallet #1 approves USDC for trade and calls the swap function on the Stargate Finance: Router contract, in order to swap the $1,003 USDC and pays ~.93 FTM in gas fees.
+
+<table>
+  <tr>
+    <td>
+      <img src="./images/LZ3.png" width="2600" height="32.5">
+    </td>
+  </tr>
+</table>
+
 ## Overview
 
 The Sybil Defender identifies and labels Sybil Attack clusters operating on the application layer of EVM-compatible blockchains. This includes Ethereum, Arbitrum, Optimism, Polygon, Binance Smart Chain, Avalanche, and Fantom. It monitors transactions to detect patterns that may indicate Sybil behavior, such as Airdrop Farming, Governance Attacks, and Wash Trading/Market Manipulation.
