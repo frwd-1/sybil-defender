@@ -56,6 +56,76 @@ For example, on 2024-01-21 20:28:16, Funded Wallet #1 (0xdDdDF9454429d0f8838A10C
   </tr>
 </table>
 
+Funded Wallet #2 (0x0B17e98fA7F6c0B0c5201A5Aa06Ee80381D1403E) follows the exact same pattern:
+
+<table>
+  <tr>
+    <td>
+      <img src="./images/LZ4.png" width="2600" height="32.5">
+    </td>
+  </tr>
+</table>
+
+<table>
+  <tr>
+    <td>
+      <img src="./images/LZ5.png" width="3000" height="65">
+    </td>
+  </tr>
+</table>
+
+Funded Wallet #3 (0x4e036637E2E3b498943C3728C013d2e576da9db0) follows the exact same pattern:
+
+<table>
+  <tr>
+    <td>
+      <img src="./images/LZ6.png" width="2600" height="32.5">
+    </td>
+  </tr>
+</table>
+
+<table>
+  <tr>
+    <td>
+      <img src="./images/LZ7.png" width="3000" height="65">
+    </td>
+  </tr>
+</table>
+
+The process is repeated over the course of several months with more and more wallets continuously being created and added to the Sybil network
+
+2. Sequential Pattern - instead of funding many wallets from a single wallet, wallets are funded sequentially in a pattern that involves first funding a wallet with native asset for gas, second engaging in sybil actions, and finally sending gas funds to the next wallet in a sequence to repeat the pattern. The example from our Layer Zero Sybil Report below shows this on the Avalanche chain:
+
+Wallet A (0x606600eBDD1A91713Cc263b1145584adF6bDc0AC) receives ~.26 Avax at 2023-11-26 11:58:25. 5 minutes later, Wallet A approves tokens for trade and calls the swap function on the Stargate Finance: Router contract. 1 minute later, Wallet A transfers ~.22 Avax to Wallet B
+
+<table>
+  <tr>
+    <td>
+      <img src="./images/LZ8.png" width="3000" height="165">
+    </td>
+  </tr>
+</table>
+
+6 minutes later, Wallet B repeats the pattern
+
+<table>
+  <tr>
+    <td>
+      <img src="./images/LZ9.png" width="3000" height="165">
+    </td>
+  </tr>
+</table>
+
+Wallet B funds Wallet C and the pattern continues through several dozen wallets
+
+<table>
+  <tr>
+    <td>
+      <img src="./images/LZ10.png" width="3000" height="165">
+    </td>
+  </tr>
+</table>
+
 ## Overview
 
 The Sybil Defender identifies and labels Sybil Attack clusters operating on the application layer of EVM-compatible blockchains. This includes Ethereum, Arbitrum, Optimism, Polygon, Binance Smart Chain, Avalanche, and Fantom. It monitors transactions to detect patterns that may indicate Sybil behavior, such as Airdrop Farming, Governance Attacks, and Wash Trading/Market Manipulation.
