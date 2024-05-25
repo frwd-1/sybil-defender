@@ -101,7 +101,7 @@ Wallet A (0x606600eBDD1A91713Cc263b1145584adF6bDc0AC) receives ~.26 Avax at 2023
 <table>
   <tr>
     <td>
-      <img src="./images/LZ8.png" width="3000" height="165">
+      <img src="./images/LZ8.png" width="3000" height="130">
     </td>
   </tr>
 </table>
@@ -111,7 +111,7 @@ Wallet A (0x606600eBDD1A91713Cc263b1145584adF6bDc0AC) receives ~.26 Avax at 2023
 <table>
   <tr>
     <td>
-      <img src="./images/LZ9.png" width="3000" height="165">
+      <img src="./images/LZ9.png" width="3000" height="130">
     </td>
   </tr>
 </table>
@@ -121,12 +121,12 @@ Wallet B funds Wallet C and the pattern continues through several dozen wallets
 <table>
   <tr>
     <td>
-      <img src="./images/LZ10.png" width="3000" height="165">
+      <img src="./images/LZ10.png" width="3000" height="130">
     </td>
   </tr>
 </table>
 
-## Overview
+## Summary and Additional Information
 
 The Sybil Defender identifies and labels Sybil Attack clusters operating on the application layer of EVM-compatible blockchains. This includes Ethereum, Arbitrum, Optimism, Polygon, Binance Smart Chain, Avalanche, and Fantom. It monitors transactions to detect patterns that may indicate Sybil behavior, such as Airdrop Farming, Governance Attacks, and Wash Trading/Market Manipulation.
 
