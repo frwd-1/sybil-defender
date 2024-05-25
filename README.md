@@ -51,7 +51,7 @@ For example, on 2024-01-21 20:28:16, Funded Wallet #1 (0xdDdDF9454429d0f8838A10C
 <table>
   <tr>
     <td>
-      <img src="./images/LZ3.png" width="3000" height="50">
+      <img src="./images/LZ3.png" width="3000" height="65">
     </td>
   </tr>
 </table>
