@@ -33,11 +33,13 @@ if __name__ == "__main__":
     app.run(port=5000)
 
 
+# forta sdk doesn't recognize async handle_transaction so it needs to be wrapped
 def handle_transaction(transaction_event: TransactionEvent):
     print("running handle transaction")
     loop = asyncio.get_event_loop()
     network_name = transaction_event.network.name
 
+    # neo4j-kafka is expected to be initialized outside of the agent
     if DATABASE_TYPE != "neo4jkafka":
         if not loop.is_running():
             loop.run_until_complete(initialize_database(network_name))
@@ -59,6 +61,7 @@ async def handle_transaction_async(
     if not await apply_initial_heuristics(transaction_event):
         return []
 
+    # neo4j-kafka database config option
     if DATABASE_TYPE == "neo4jkafka":
         try:
             # await publish_transactions_to_kafka(transaction_event)
