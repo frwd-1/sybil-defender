@@ -2,6 +2,8 @@
 
 ## Layer Zero Submission Methodology
 
+Commonwealth submission link (for cross reference) - https://commonwealth.im/layerzero/discussion/19392-sybil-report-by-frwd1-aka-frwd-labs-repost-of-original-github-issue-667-submitted-may-18th-approx-0205-utc
+
 The methodology is based primarily on research found in this paper - https://arxiv.org/pdf/2209.04603 and prior work done in the Arbitrum and Hop sybil detection programs - https://github.com/ArbitrumFoundation/sybil-detection
 
 The Sybil Defender is deployed on the Forta network and has been continuously monitoring and labeling Sybil activity on 7 blockchains since November 2023 (Ethereum, Arbitrum, Polygon, Avalanche, Optimism, BSC, and Fantom).
