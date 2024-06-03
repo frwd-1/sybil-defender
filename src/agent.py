@@ -1,5 +1,7 @@
 import asyncio
+import debugpy
 from flask import Flask, request, jsonify
+
 from forta_agent import TransactionEvent
 
 from src.hydra.database_controllers.db_controller import initialize_database
@@ -18,6 +20,9 @@ from src.hydra.utils.utils import update_transaction_counter
 
 app = Flask(__name__)
 
+
+# from src.config import DATABASE_TYPE
+
 DATABASE_TYPE = "local"
 transaction_b = []
 
@@ -33,7 +38,8 @@ if __name__ == "__main__":
     app.run(port=5000)
 
 
-# forta sdk doesn't recognize async handle_transaction so it needs to be wrapped
+# handle transaction is the hook recognized by the forta sdk that takes in transaction events from nodes and allows further processing
+# forta sdk doesn't recognize "async handle_transaction" so it needs to be wrapped to make it async
 def handle_transaction(transaction_event: TransactionEvent):
     print("running handle transaction")
     loop = asyncio.get_event_loop()

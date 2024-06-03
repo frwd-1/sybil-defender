@@ -4,5 +4,3 @@ C_SIZE = 10
 S_THRESHOLD = 0.5
 I_RATIO = 0.05
 L_THRESHOLD = 10000
-
-# const

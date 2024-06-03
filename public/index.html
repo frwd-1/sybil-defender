@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Wallet Label Checker</title>
+</head>
+<body>
+    <h1>Wallet Label Checker</h1>
+    <input type="text" id="walletAddress" placeholder="Enter wallet address">
+    <button onclick="checkWallet()">Check</button>
+    <div id="result"></div>
+
+    <script>
+        function checkWallet() {
+            const address = document.getElementById('walletAddress').value;
+            if (!address.trim()) {
+                document.getElementById('result').innerText = 'Please enter a valid wallet address.';
+                return;
+            }
+            fetch(`/wallet/${address}`)
+                .then(response => {
+                    if (!response.ok) {
+                        throw new Error('Failed to fetch labels');
+                    }
+                    return response.json();
+                })
+                .then(data => {
+                    if (data.length > 0) {
+                        const content = data.map(item => `Label: ${item.label}, Status: ${item.status}, Typology: ${item.typology}`).join("<br>");
+                        document.getElementById('result').innerHTML = content;
+                    } else {
+                        document.getElementById('result').innerText = 'No data found for this address.';
+                    }
+                })
+                .catch(error => {
+                    console.error('Error:', error);
+                    document.getElementById('result').innerText = 'There was an error fetching data';
+                });
+        }
+    </script>
+</body>
+</html>
