@@ -6,14 +6,8 @@ __pycache__
 .env
 alembic.ini
 .graphml
-src/hydra
-src/hydra_clean
-src/g
 src/db
-src/contracts
 Dockerfile
 apollo
 disco
 dataextract
-neo4j
-agent2

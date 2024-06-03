@@ -1,0 +1,1533 @@
+<?xml version='1.0' encoding='utf-8'?>
+<graphml xmlns="http://graphml.graphdrawing.org/xmlns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://graphml.graphdrawing.org/xmlns/1.0/graphml.xsd"><key id="d8" for="edge" attr.name="weight" attr.type="double"/>
+<key id="d7" for="edge" attr.name="chainId" attr.type="string"/>
+<key id="d6" for="edge" attr.name="amount" attr.type="double"/>
+<key id="d5" for="edge" attr.name="gas_price" attr.type="double"/>
+<key id="d4" for="edge" attr.name="timestamp" attr.type="long"/>
+<key id="d3" for="edge" attr.name="hash" attr.type="string"/>
+<key id="d2" for="node" attr.name="community" attr.type="long"/>
+<key id="d1" for="node" attr.name="address" attr.type="string"/>
+<key id="d0" for="node" attr.name="chainId" attr.type="string"/>
+<graph edgedefault="directed"><node id="0x8af8485e1f178be06386cd3877fde20626e0284f">
+  <data key="d0">AVALANCHE</data>
+  <data key="d1">0x8af8485e1f178be06386cd3877fde20626e0284f</data>
+  <data key="d2">1</data>
+</node>
+<node id="0x094446fbfeb9e6c9cf8cff98582e96c5138f8f7f">
+  <data key="d0">AVALANCHE</data>
+  <data key="d1">0x094446fbfeb9e6c9cf8cff98582e96c5138f8f7f</data>
+  <data key="d2">1</data>
+</node>
+<node id="0xe1597df1f0e1920f7a296cef27babb40baeeabfc">
+  <data key="d0">AVALANCHE</data>
+  <data key="d1">0xe1597df1f0e1920f7a296cef27babb40baeeabfc</data>
+  <data key="d2">2</data>
+</node>
+<node id="0x167730965b42f6ef57b53f1961f40f16deb48218">
+  <data key="d0">AVALANCHE</data>
+  <data key="d1">0x167730965b42f6ef57b53f1961f40f16deb48218</data>
+  <data key="d2">2</data>
+</node>
+<node id="0xf89d7b9c864f589bbf53a82105107622b35eaa40">
+  <data key="d0">AVALANCHE</data>
+  <data key="d1">0xf89d7b9c864f589bbf53a82105107622b35eaa40</data>
+  <data key="d2">3</data>
+</node>
+<node id="0x0a09f1d932c3578f0ff297fb30c5d206bb5e3015">
+  <data key="d0">AVALANCHE</data>
+  <data key="d1">0x0a09f1d932c3578f0ff297fb30c5d206bb5e3015</data>
+  <data key="d2">3</data>
+</node>
+<node id="0xd29b6d445763ac97c72ebef3fa77577523dac5f2">
+  <data key="d0">AVALANCHE</data>
+  <data key="d1">0xd29b6d445763ac97c72ebef3fa77577523dac5f2</data>
+  <data key="d2">3</data>
+</node>
+<node id="0x36eba88acffef2a56f59144e22abaf8f7625abad">
+  <data key="d0">AVALANCHE</data>
+  <data key="d1">0x36eba88acffef2a56f59144e22abaf8f7625abad</data>
+  <data key="d2">3</data>
+</node>
+<node id="0x333d17d3b42bf7930dbc6e852ca7bcf560a69003">
+  <data key="d0">AVALANCHE</data>
+  <data key="d1">0x333d17d3b42bf7930dbc6e852ca7bcf560a69003</data>
+  <data key="d2">4</data>
+</node>
+<node id="0xf001f53167e89c77dfef6d2db24c6c597546e8a8">
+  <data key="d0">AVALANCHE</data>
+  <data key="d1">0xf001f53167e89c77dfef6d2db24c6c597546e8a8</data>
+  <data key="d2">4</data>
+</node>
+<node id="0x9406b040fc205b665499deb80202a430d201e44c">
+  <data key="d0">AVALANCHE</data>
+  <data key="d1">0x9406b040fc205b665499deb80202a430d201e44c</data>
+  <data key="d2">3</data>
+</node>
+<node id="0x916eb4df6b08aa7b6b4fdcc0243afab24f043bdb">
+  <data key="d0">AVALANCHE</data>
+  <data key="d1">0x916eb4df6b08aa7b6b4fdcc0243afab24f043bdb</data>
+  <data key="d2">4</data>
+</node>
+<node id="0x782f1e99b5dc9750e8413e382cca5616f167a1dd">
+  <data key="d0">AVALANCHE</data>
+  <data key="d1">0x782f1e99b5dc9750e8413e382cca5616f167a1dd</data>
+  <data key="d2">4</data>
+</node>
+<node id="0xa16f524a804beaed0d791de0aa0b5836295a2a84">
+  <data key="d0">AVALANCHE</data>
+  <data key="d1">0xa16f524a804beaed0d791de0aa0b5836295a2a84</data>
+  <data key="d2">5</data>
+</node>
+<node id="0x58e1702f90af3584b58b1f11a95f608341a360db">
+  <data key="d0">AVALANCHE</data>
+  <data key="d1">0x58e1702f90af3584b58b1f11a95f608341a360db</data>
+  <data key="d2">5</data>
+</node>
+<node id="0xc6516effa29e4d10b93b46b025a2a227e26ecd2f">
+  <data key="d0">AVALANCHE</data>
+  <data key="d1">0xc6516effa29e4d10b93b46b025a2a227e26ecd2f</data>
+  <data key="d2">3</data>
+</node>
+<node id="0xffb3118124cdaebd9095fa9a479895042018cac2">
+  <data key="d0">AVALANCHE</data>
+  <data key="d1">0xffb3118124cdaebd9095fa9a479895042018cac2</data>
+  <data key="d2">4</data>
+</node>
+<node id="0x6381a7d087e4038b0271bba5fc8787f6be9b3861">
+  <data key="d0">AVALANCHE</data>
+  <data key="d1">0x6381a7d087e4038b0271bba5fc8787f6be9b3861</data>
+  <data key="d2">4</data>
+</node>
+<node id="0x27079ca6d619410b1d0d88d51813aaf9b5c09aee">
+  <data key="d0">AVALANCHE</data>
+  <data key="d1">0x27079ca6d619410b1d0d88d51813aaf9b5c09aee</data>
+  <data key="d2">5</data>
+</node>
+<node id="0xef8537aa2488d7e80005b079a59fa214f5e8d139">
+  <data key="d0">AVALANCHE</data>
+  <data key="d1">0xef8537aa2488d7e80005b079a59fa214f5e8d139</data>
+  <data key="d2">5</data>
+</node>
+<node id="0x7ed53f6e3de6b2b4156fa8e618506e60d8e65843">
+  <data key="d0">AVALANCHE</data>
+  <data key="d1">0x7ed53f6e3de6b2b4156fa8e618506e60d8e65843</data>
+  <data key="d2">4</data>
+</node>
+<node id="0x0a023fd60477d54a6639e41705817ef408e1a39d">
+  <data key="d0">AVALANCHE</data>
+  <data key="d1">0x0a023fd60477d54a6639e41705817ef408e1a39d</data>
+  <data key="d2">4</data>
+</node>
+<node id="0x05156a5dc3dfb2e8aaf6194e26e347f949223524">
+  <data key="d0">AVALANCHE</data>
+  <data key="d1">0x05156a5dc3dfb2e8aaf6194e26e347f949223524</data>
+  <data key="d2">5</data>
+</node>
+<node id="0x1e85925e86c9cf811b090874ec0f61ba7e40a052">
+  <data key="d0">AVALANCHE</data>
+  <data key="d1">0x1e85925e86c9cf811b090874ec0f61ba7e40a052</data>
+  <data key="d2">4</data>
+</node>
+<node id="0x5d303f3b248031a577e5565964e6ed8d18deda8c">
+  <data key="d0">AVALANCHE</data>
+  <data key="d1">0x5d303f3b248031a577e5565964e6ed8d18deda8c</data>
+  <data key="d2">4</data>
+</node>
+<node id="0x38b55b829381bd8e128c8842d43c2b80df890ce0">
+  <data key="d0">AVALANCHE</data>
+  <data key="d1">0x38b55b829381bd8e128c8842d43c2b80df890ce0</data>
+  <data key="d2">5</data>
+</node>
+<node id="0x7f6bf36fc635ef14a8c5328b8dfc751bd8284029">
+  <data key="d0">AVALANCHE</data>
+  <data key="d1">0x7f6bf36fc635ef14a8c5328b8dfc751bd8284029</data>
+  <data key="d2">3</data>
+</node>
+<node id="0xb562d1eb328f0da4f59bdb6eed979d3eeb2482c8">
+  <data key="d0">AVALANCHE</data>
+  <data key="d1">0xb562d1eb328f0da4f59bdb6eed979d3eeb2482c8</data>
+  <data key="d2">6</data>
+</node>
+<node id="0xbfe42c1df7015780a2c0c51a3c0ff0d3b37b38b3">
+  <data key="d0">AVALANCHE</data>
+  <data key="d1">0xbfe42c1df7015780a2c0c51a3c0ff0d3b37b38b3</data>
+  <data key="d2">6</data>
+</node>
+<node id="0x6081258689a75d253d87ce902a8de3887239fe80">
+  <data key="d0">AVALANCHE</data>
+  <data key="d1">0x6081258689a75d253d87ce902a8de3887239fe80</data>
+  <data key="d2">4</data>
+</node>
+<node id="0xc6e9d5ebe78fc119caec0fa6826cd255f3ab5e15">
+  <data key="d0">AVALANCHE</data>
+  <data key="d1">0xc6e9d5ebe78fc119caec0fa6826cd255f3ab5e15</data>
+  <data key="d2">4</data>
+</node>
+<node id="0xde82ae7623dc90d0a9847195b7faa70c07d0b292">
+  <data key="d0">AVALANCHE</data>
+  <data key="d1">0xde82ae7623dc90d0a9847195b7faa70c07d0b292</data>
+  <data key="d2">4</data>
+</node>
+<node id="0xbfdc77dedc8dc2f860889312f24a8b71ddbf3348">
+  <data key="d0">AVALANCHE</data>
+  <data key="d1">0xbfdc77dedc8dc2f860889312f24a8b71ddbf3348</data>
+  <data key="d2">6</data>
+</node>
+<node id="0x57cdb842468dae11759e5b38ca03d33ff2d683e1">
+  <data key="d0">AVALANCHE</data>
+  <data key="d1">0x57cdb842468dae11759e5b38ca03d33ff2d683e1</data>
+  <data key="d2">4</data>
+</node>
+<node id="0x455c1887e39be8c3fc4585f1c8014b64e9b5363c">
+  <data key="d0">AVALANCHE</data>
+  <data key="d1">0x455c1887e39be8c3fc4585f1c8014b64e9b5363c</data>
+  <data key="d2">4</data>
+</node>
+<node id="0x82b032410f7cd28b054cab28bf1c14ee893acd17">
+  <data key="d0">AVALANCHE</data>
+  <data key="d1">0x82b032410f7cd28b054cab28bf1c14ee893acd17</data>
+  <data key="d2">6</data>
+</node>
+<node id="0x1c84469ee010a5c1fa0771aaf450bde11e34fbcf">
+  <data key="d0">AVALANCHE</data>
+  <data key="d1">0x1c84469ee010a5c1fa0771aaf450bde11e34fbcf</data>
+  <data key="d2">4</data>
+</node>
+<node id="0x4803b81b8b7843f128244bd7a71ccf9e6aeeeb05">
+  <data key="d0">AVALANCHE</data>
+  <data key="d1">0x4803b81b8b7843f128244bd7a71ccf9e6aeeeb05</data>
+  <data key="d2">4</data>
+</node>
+<node id="0x93cca489a606b278647bdf64be474869524c67a7">
+  <data key="d0">AVALANCHE</data>
+  <data key="d1">0x93cca489a606b278647bdf64be474869524c67a7</data>
+  <data key="d2">5</data>
+</node>
+<node id="0x8f4a27a8107a5f024eda09e86b050b7ee0019435">
+  <data key="d0">AVALANCHE</data>
+  <data key="d1">0x8f4a27a8107a5f024eda09e86b050b7ee0019435</data>
+  <data key="d2">6</data>
+</node>
+<node id="0xd5c5c47095e7fe01ebcbca8734d754489bd5795b">
+  <data key="d0">AVALANCHE</data>
+  <data key="d1">0xd5c5c47095e7fe01ebcbca8734d754489bd5795b</data>
+  <data key="d2">5</data>
+</node>
+<node id="0xb8402324c97b8a7aa8cbf45ec3fcfb4a41c7f9a2">
+  <data key="d0">AVALANCHE</data>
+  <data key="d1">0xb8402324c97b8a7aa8cbf45ec3fcfb4a41c7f9a2</data>
+  <data key="d2">6</data>
+</node>
+<node id="0x4a4e859565d9b563afc8e63641542455cff0dfd2">
+  <data key="d0">AVALANCHE</data>
+  <data key="d1">0x4a4e859565d9b563afc8e63641542455cff0dfd2</data>
+  <data key="d2">4</data>
+</node>
+<node id="0x4d2ee0808cd2dd39a52a120b6eed37fd4e0dbf80">
+  <data key="d0">AVALANCHE</data>
+  <data key="d1">0x4d2ee0808cd2dd39a52a120b6eed37fd4e0dbf80</data>
+  <data key="d2">6</data>
+</node>
+<node id="0xfa5fe357f49fda80bee8ba46fc1d7f0d21b14969">
+  <data key="d0">AVALANCHE</data>
+  <data key="d1">0xfa5fe357f49fda80bee8ba46fc1d7f0d21b14969</data>
+  <data key="d2">1</data>
+</node>
+<node id="0xa95b83af96d0b8a90bd507f2bd82ad8f3dbb86bc">
+  <data key="d0">AVALANCHE</data>
+  <data key="d1">0xa95b83af96d0b8a90bd507f2bd82ad8f3dbb86bc</data>
+  <data key="d2">3</data>
+</node>
+<node id="0x60c3476642d92006b6b377c10aac7698b4785a27">
+  <data key="d0">AVALANCHE</data>
+  <data key="d1">0x60c3476642d92006b6b377c10aac7698b4785a27</data>
+  <data key="d2">3</data>
+</node>
+<node id="0xfa4db8eaf03876f1fc3d1d8a5daa5db10eb2bbe4">
+  <data key="d0">AVALANCHE</data>
+  <data key="d1">0xfa4db8eaf03876f1fc3d1d8a5daa5db10eb2bbe4</data>
+  <data key="d2">6</data>
+</node>
+<node id="0xd51ca86598d080e4112581a5e57d61893ed3ac8f">
+  <data key="d0">AVALANCHE</data>
+  <data key="d1">0xd51ca86598d080e4112581a5e57d61893ed3ac8f</data>
+  <data key="d2">4</data>
+</node>
+<node id="0xab48a72250ef6aefa2769d223f93131432cc93a5">
+  <data key="d0">AVALANCHE</data>
+  <data key="d1">0xab48a72250ef6aefa2769d223f93131432cc93a5</data>
+  <data key="d2">4</data>
+</node>
+<node id="0xef2331e2ebfdf51202320552f03378d584af0554">
+  <data key="d0">AVALANCHE</data>
+  <data key="d1">0xef2331e2ebfdf51202320552f03378d584af0554</data>
+  <data key="d2">4</data>
+</node>
+<node id="0x9cc548536d8ec1d6c89e6ddd3b0ceea350fe73dc">
+  <data key="d0">AVALANCHE</data>
+  <data key="d1">0x9cc548536d8ec1d6c89e6ddd3b0ceea350fe73dc</data>
+  <data key="d2">7</data>
+</node>
+<node id="0x5553d886325b1b90302b2edd3089b5041f813ca2">
+  <data key="d0">AVALANCHE</data>
+  <data key="d1">0x5553d886325b1b90302b2edd3089b5041f813ca2</data>
+  <data key="d2">7</data>
+</node>
+<node id="0xd58a22fe8d44ffae92fd47e9f0540a3588dcfd47">
+  <data key="d0">AVALANCHE</data>
+  <data key="d1">0xd58a22fe8d44ffae92fd47e9f0540a3588dcfd47</data>
+  <data key="d2">7</data>
+</node>
+<node id="0x7797449367d0355dcfed394bcc0769b889df8e3c">
+  <data key="d0">AVALANCHE</data>
+  <data key="d1">0x7797449367d0355dcfed394bcc0769b889df8e3c</data>
+  <data key="d2">5</data>
+</node>
+<node id="0x3fd8f488c9f992f67b7b51c994e17c345d3a3861">
+  <data key="d0">AVALANCHE</data>
+  <data key="d1">0x3fd8f488c9f992f67b7b51c994e17c345d3a3861</data>
+  <data key="d2">7</data>
+</node>
+<node id="0x9c07690e6d9429c6cfde9a38ade73f0d4bad08bf">
+  <data key="d0">AVALANCHE</data>
+  <data key="d1">0x9c07690e6d9429c6cfde9a38ade73f0d4bad08bf</data>
+  <data key="d2">5</data>
+</node>
+<node id="0xc72af333f3d6220a964676b9c8700dd1912df7b4">
+  <data key="d0">AVALANCHE</data>
+  <data key="d1">0xc72af333f3d6220a964676b9c8700dd1912df7b4</data>
+  <data key="d2">4</data>
+</node>
+<node id="0x187b2d576ba7ec2141c180a96edd0f202492f36b">
+  <data key="d0">AVALANCHE</data>
+  <data key="d1">0x187b2d576ba7ec2141c180a96edd0f202492f36b</data>
+  <data key="d2">8</data>
+</node>
+<node id="0x0082395fc0b59ee2a4cac909a57347c9d69e3eda">
+  <data key="d0">AVALANCHE</data>
+  <data key="d1">0x0082395fc0b59ee2a4cac909a57347c9d69e3eda</data>
+  <data key="d2">8</data>
+</node>
+<node id="0xe02c4d5900fdb06a53890c421ab6fd595f00eef8">
+  <data key="d0">AVALANCHE</data>
+  <data key="d1">0xe02c4d5900fdb06a53890c421ab6fd595f00eef8</data>
+  <data key="d2">4</data>
+</node>
+<node id="0xcb2cc9e98ec0422f93960ea96f5ff0251daf5291">
+  <data key="d0">AVALANCHE</data>
+  <data key="d1">0xcb2cc9e98ec0422f93960ea96f5ff0251daf5291</data>
+  <data key="d2">4</data>
+</node>
+<node id="0x507a9e04a864c8c5bfe987a6cf8eab830f1ffce7">
+  <data key="d0">AVALANCHE</data>
+  <data key="d1">0x507a9e04a864c8c5bfe987a6cf8eab830f1ffce7</data>
+  <data key="d2">4</data>
+</node>
+<node id="0xfc52b6d756e286894fd6f8dd0c9494c85d8117d3">
+  <data key="d0">AVALANCHE</data>
+  <data key="d1">0xfc52b6d756e286894fd6f8dd0c9494c85d8117d3</data>
+  <data key="d2">5</data>
+</node>
+<node id="0x1ab954d8561429c406e9d12ac41d30732e0e070e">
+  <data key="d0">AVALANCHE</data>
+  <data key="d1">0x1ab954d8561429c406e9d12ac41d30732e0e070e</data>
+  <data key="d2">5</data>
+</node>
+<node id="0x5ee4e2cb4530d6f4a94f9ee0dc4b84053e95e1d7">
+  <data key="d0">AVALANCHE</data>
+  <data key="d1">0x5ee4e2cb4530d6f4a94f9ee0dc4b84053e95e1d7</data>
+  <data key="d2">3</data>
+</node>
+<node id="0x86a7cd0eaefd993a38175f9c0ba63300e3806176">
+  <data key="d0">AVALANCHE</data>
+  <data key="d1">0x86a7cd0eaefd993a38175f9c0ba63300e3806176</data>
+  <data key="d2">3</data>
+</node>
+<node id="0x40827b193931fc33b879cc2915acd2ddc27a59d7">
+  <data key="d0">AVALANCHE</data>
+  <data key="d1">0x40827b193931fc33b879cc2915acd2ddc27a59d7</data>
+  <data key="d2">3</data>
+</node>
+<node id="0x1f91d714ba84e905dd18dfe1b0337f3517e62f43">
+  <data key="d0">AVALANCHE</data>
+  <data key="d1">0x1f91d714ba84e905dd18dfe1b0337f3517e62f43</data>
+  <data key="d2">3</data>
+</node>
+<node id="0x60e2e28cdaed95682d224291bde89088184a6664">
+  <data key="d0">AVALANCHE</data>
+  <data key="d1">0x60e2e28cdaed95682d224291bde89088184a6664</data>
+  <data key="d2">3</data>
+</node>
+<node id="0x320c66420a392e0d47ebc4edc04adec113fefd7b">
+  <data key="d0">AVALANCHE</data>
+  <data key="d1">0x320c66420a392e0d47ebc4edc04adec113fefd7b</data>
+  <data key="d2">3</data>
+</node>
+<node id="0x1eb182245b87d2f0d99bfdadea4958207e7fd1d5">
+  <data key="d0">AVALANCHE</data>
+  <data key="d1">0x1eb182245b87d2f0d99bfdadea4958207e7fd1d5</data>
+  <data key="d2">3</data>
+</node>
+<node id="0x17feb3511d9b9c0c08ebb9fdc9e320d658c4ab59">
+  <data key="d0">AVALANCHE</data>
+  <data key="d1">0x17feb3511d9b9c0c08ebb9fdc9e320d658c4ab59</data>
+  <data key="d2">3</data>
+</node>
+<node id="0x7bfc0c62a745e97c6f7ece2e99926c8e6f317632">
+  <data key="d0">AVALANCHE</data>
+  <data key="d1">0x7bfc0c62a745e97c6f7ece2e99926c8e6f317632</data>
+  <data key="d2">1</data>
+</node>
+<node id="0x4c82bdb028945578060f200f1ae2af603c301805">
+  <data key="d0">AVALANCHE</data>
+  <data key="d1">0x4c82bdb028945578060f200f1ae2af603c301805</data>
+  <data key="d2">4</data>
+</node>
+<node id="0x3dcfa9d75b98419073439cb1cf501bdff8a13911">
+  <data key="d0">AVALANCHE</data>
+  <data key="d1">0x3dcfa9d75b98419073439cb1cf501bdff8a13911</data>
+  <data key="d2">4</data>
+</node>
+<node id="0xabd6e49725ceb96fa995661e1d40a72450394c8a">
+  <data key="d0">AVALANCHE</data>
+  <data key="d1">0xabd6e49725ceb96fa995661e1d40a72450394c8a</data>
+  <data key="d2">5</data>
+</node>
+<node id="0x0cbb7d912fa48a7e482d979af4dd31a3df43dad5">
+  <data key="d0">AVALANCHE</data>
+  <data key="d1">0x0cbb7d912fa48a7e482d979af4dd31a3df43dad5</data>
+  <data key="d2">3</data>
+</node>
+<node id="0x97f69380ec77eff6eb5655f437aecb1a6cf7fc44">
+  <data key="d0">AVALANCHE</data>
+  <data key="d1">0x97f69380ec77eff6eb5655f437aecb1a6cf7fc44</data>
+  <data key="d2">8</data>
+</node>
+<node id="0xa2a8f9fffa357a246c5d52e819ed34ff5f5bd5b9">
+  <data key="d0">AVALANCHE</data>
+  <data key="d1">0xa2a8f9fffa357a246c5d52e819ed34ff5f5bd5b9</data>
+  <data key="d2">3</data>
+</node>
+<node id="0x0609c83e046fb3f04d5395a69aea8d64f35a2556">
+  <data key="d0">AVALANCHE</data>
+  <data key="d1">0x0609c83e046fb3f04d5395a69aea8d64f35a2556</data>
+  <data key="d2">4</data>
+</node>
+<node id="0x48619f9d2ff2dd7ec5e8380df4debe7389ff0cf0">
+  <data key="d0">AVALANCHE</data>
+  <data key="d1">0x48619f9d2ff2dd7ec5e8380df4debe7389ff0cf0</data>
+  <data key="d2">4</data>
+</node>
+<node id="0x3e767cdfde1847d9fa175f7914a5aa1d3c9622e2">
+  <data key="d0">AVALANCHE</data>
+  <data key="d1">0x3e767cdfde1847d9fa175f7914a5aa1d3c9622e2</data>
+  <data key="d2">5</data>
+</node>
+<node id="0xb23360ccdd9ed1b15d45e5d3824bb409c8d7c460">
+  <data key="d0">AVALANCHE</data>
+  <data key="d1">0xb23360ccdd9ed1b15d45e5d3824bb409c8d7c460</data>
+  <data key="d2">4</data>
+</node>
+<node id="0x3fe97d28a6569e7fc3021b6d838e901d0f057847">
+  <data key="d0">AVALANCHE</data>
+  <data key="d1">0x3fe97d28a6569e7fc3021b6d838e901d0f057847</data>
+  <data key="d2">4</data>
+</node>
+<node id="0x33520f8c82f26c7481f7b8edc88c20dc15647909">
+  <data key="d0">AVALANCHE</data>
+  <data key="d1">0x33520f8c82f26c7481f7b8edc88c20dc15647909</data>
+  <data key="d2">5</data>
+</node>
+<node id="0x4fe755208076fa44e9c8db03b3063e3ef4b579a7">
+  <data key="d0">AVALANCHE</data>
+  <data key="d1">0x4fe755208076fa44e9c8db03b3063e3ef4b579a7</data>
+  <data key="d2">8</data>
+</node>
+<node id="0xf1b6582286b59d1d7c6f58971f16b09d3a2910e7">
+  <data key="d0">AVALANCHE</data>
+  <data key="d1">0xf1b6582286b59d1d7c6f58971f16b09d3a2910e7</data>
+  <data key="d2">2</data>
+</node>
+<node id="0xe1a0ddeb9b5b55e489977b438764e60e314e917c">
+  <data key="d0">AVALANCHE</data>
+  <data key="d1">0xe1a0ddeb9b5b55e489977b438764e60e314e917c</data>
+  <data key="d2">2</data>
+</node>
+<node id="0x6767526a362ec6c6b1df185478e4f01506b73ff3">
+  <data key="d0">AVALANCHE</data>
+  <data key="d1">0x6767526a362ec6c6b1df185478e4f01506b73ff3</data>
+  <data key="d2">2</data>
+</node>
+<node id="0x8e5c2aa2b1184c9dac83bdd939148a92fc73b79f">
+  <data key="d0">AVALANCHE</data>
+  <data key="d1">0x8e5c2aa2b1184c9dac83bdd939148a92fc73b79f</data>
+  <data key="d2">4</data>
+</node>
+<node id="0xa89f37b4025b18d4a956e679e9c929efec7a3255">
+  <data key="d0">AVALANCHE</data>
+  <data key="d1">0xa89f37b4025b18d4a956e679e9c929efec7a3255</data>
+  <data key="d2">4</data>
+</node>
+<node id="0x7f9f917f24e64eb9f43c4602ce456f5853a27919">
+  <data key="d0">AVALANCHE</data>
+  <data key="d1">0x7f9f917f24e64eb9f43c4602ce456f5853a27919</data>
+  <data key="d2">1</data>
+</node>
+<node id="0x2815519e1006f0c105161a1056c5808620299f87">
+  <data key="d0">AVALANCHE</data>
+  <data key="d1">0x2815519e1006f0c105161a1056c5808620299f87</data>
+  <data key="d2">5</data>
+</node>
+<node id="0xfdfb008d62787750e7696bd11af2fb0063ac229e">
+  <data key="d0">AVALANCHE</data>
+  <data key="d1">0xfdfb008d62787750e7696bd11af2fb0063ac229e</data>
+  <data key="d2">5</data>
+</node>
+<node id="0x6d979991bd652a304391e9c217b1fbb301d6a16b">
+  <data key="d0">AVALANCHE</data>
+  <data key="d1">0x6d979991bd652a304391e9c217b1fbb301d6a16b</data>
+  <data key="d2">8</data>
+</node>
+<node id="0x1f1141c8541f2ecd52c2d4193ed054a90cc7342a">
+  <data key="d0">AVALANCHE</data>
+  <data key="d1">0x1f1141c8541f2ecd52c2d4193ed054a90cc7342a</data>
+  <data key="d2">4</data>
+</node>
+<node id="0xace2bae9ca244b5807ff3ad280ad1867b2b55c9d">
+  <data key="d0">AVALANCHE</data>
+  <data key="d1">0xace2bae9ca244b5807ff3ad280ad1867b2b55c9d</data>
+  <data key="d2">4</data>
+</node>
+<node id="0xfc34d4f20bc8edd722693bf11d1e40d145043cb4">
+  <data key="d0">AVALANCHE</data>
+  <data key="d1">0xfc34d4f20bc8edd722693bf11d1e40d145043cb4</data>
+  <data key="d2">2</data>
+</node>
+<node id="0x5df5f89ea98f73f1312d56d19ee8b27d62553277">
+  <data key="d0">AVALANCHE</data>
+  <data key="d1">0x5df5f89ea98f73f1312d56d19ee8b27d62553277</data>
+  <data key="d2">3</data>
+</node>
+<node id="0xbce53995e7a99cf58f5ed09dcf9d610ee4bc3ba2">
+  <data key="d0">AVALANCHE</data>
+  <data key="d1">0xbce53995e7a99cf58f5ed09dcf9d610ee4bc3ba2</data>
+  <data key="d2">4</data>
+</node>
+<node id="0xff9cdad8d5a67e40b18a5683c2668a4316f6115f">
+  <data key="d0">AVALANCHE</data>
+  <data key="d1">0xff9cdad8d5a67e40b18a5683c2668a4316f6115f</data>
+  <data key="d2">4</data>
+</node>
+<node id="0xb790588f7a8a166f6d90afee88b9059cbe3a3f66">
+  <data key="d0">AVALANCHE</data>
+  <data key="d1">0xb790588f7a8a166f6d90afee88b9059cbe3a3f66</data>
+  <data key="d2">5</data>
+</node>
+<node id="0xa8d4cc5733475f9f23a5a459c1885cbfbc5a5865">
+  <data key="d0">AVALANCHE</data>
+  <data key="d1">0xa8d4cc5733475f9f23a5a459c1885cbfbc5a5865</data>
+  <data key="d2">8</data>
+</node>
+<node id="0xc4d83146a01712716f018887475b50403adf0cb4">
+  <data key="d0">AVALANCHE</data>
+  <data key="d1">0xc4d83146a01712716f018887475b50403adf0cb4</data>
+  <data key="d2">5</data>
+</node>
+<node id="0xafe34e9b537b95f09ec65f71ff0fe70c77e1b238">
+  <data key="d0">AVALANCHE</data>
+  <data key="d1">0xafe34e9b537b95f09ec65f71ff0fe70c77e1b238</data>
+  <data key="d2">5</data>
+</node>
+<node id="0x76b1b47d3137fd2830c35b8fc754e55a1976e668">
+  <data key="d0">AVALANCHE</data>
+  <data key="d1">0x76b1b47d3137fd2830c35b8fc754e55a1976e668</data>
+  <data key="d2">4</data>
+</node>
+<node id="0x78044ced0835094079a03470163ac93116cf7d1a">
+  <data key="d0">AVALANCHE</data>
+  <data key="d1">0x78044ced0835094079a03470163ac93116cf7d1a</data>
+  <data key="d2">2</data>
+</node>
+<node id="0x9c82b2720e57a7535523421d80966326436de8b5">
+  <data key="d0">AVALANCHE</data>
+  <data key="d1">0x9c82b2720e57a7535523421d80966326436de8b5</data>
+  <data key="d2">4</data>
+</node>
+<node id="0x161db687329db79ae17c8576292733bbead92352">
+  <data key="d0">AVALANCHE</data>
+  <data key="d1">0x161db687329db79ae17c8576292733bbead92352</data>
+  <data key="d2">1</data>
+</node>
+<node id="0x2f993766e8e1ef9288b1f33f6aa244911a0a77a7">
+  <data key="d0">AVALANCHE</data>
+  <data key="d1">0x2f993766e8e1ef9288b1f33f6aa244911a0a77a7</data>
+  <data key="d2">1</data>
+</node>
+<node id="0xd993a6ef72746a6c00cbea6795a98d8af8406b24">
+  <data key="d0">AVALANCHE</data>
+  <data key="d1">0xd993a6ef72746a6c00cbea6795a98d8af8406b24</data>
+  <data key="d2">8</data>
+</node>
+<node id="0x5bc0262814f361dc59d9d0179dba1f1598049cf2">
+  <data key="d0">AVALANCHE</data>
+  <data key="d1">0x5bc0262814f361dc59d9d0179dba1f1598049cf2</data>
+  <data key="d2">4</data>
+</node>
+<node id="0x817000ba363eb00765a3ed6905fcb4c9efe7434d">
+  <data key="d0">AVALANCHE</data>
+  <data key="d1">0x817000ba363eb00765a3ed6905fcb4c9efe7434d</data>
+  <data key="d2">4</data>
+</node>
+<node id="0xc69d77c3a329013f2f247374bad11c06b746c45d">
+  <data key="d0">AVALANCHE</data>
+  <data key="d1">0xc69d77c3a329013f2f247374bad11c06b746c45d</data>
+  <data key="d2">3</data>
+</node>
+<node id="0xa5d6b2acdcb0befedccac2bc8e0e5c505090d6c4">
+  <data key="d0">AVALANCHE</data>
+  <data key="d1">0xa5d6b2acdcb0befedccac2bc8e0e5c505090d6c4</data>
+  <data key="d2">5</data>
+</node>
+<node id="0x0ae132794c6b69003ad4f8e33ab1e8eb8499724c">
+  <data key="d0">AVALANCHE</data>
+  <data key="d1">0x0ae132794c6b69003ad4f8e33ab1e8eb8499724c</data>
+  <data key="d2">5</data>
+</node>
+<node id="0x48fc318e96c290c118030fa39fc31060115a85c8">
+  <data key="d0">AVALANCHE</data>
+  <data key="d1">0x48fc318e96c290c118030fa39fc31060115a85c8</data>
+  <data key="d2">5</data>
+</node>
+<node id="0x23afac6ce35d751a69237bd12bc9288fc9ee72fa">
+  <data key="d0">AVALANCHE</data>
+  <data key="d1">0x23afac6ce35d751a69237bd12bc9288fc9ee72fa</data>
+  <data key="d2">7</data>
+</node>
+<node id="0xce363a2c9e4512a20bb4dc6bc502a407e1f9f7d3">
+  <data key="d0">AVALANCHE</data>
+  <data key="d1">0xce363a2c9e4512a20bb4dc6bc502a407e1f9f7d3</data>
+  <data key="d2">7</data>
+</node>
+<node id="0x7afe237797046cca3870455c412ea6e77c63dffb">
+  <data key="d0">AVALANCHE</data>
+  <data key="d1">0x7afe237797046cca3870455c412ea6e77c63dffb</data>
+  <data key="d2">7</data>
+</node>
+<node id="0xb08758eabe40ce9f0a1bec5f9966cb8f05c8cdab">
+  <data key="d0">AVALANCHE</data>
+  <data key="d1">0xb08758eabe40ce9f0a1bec5f9966cb8f05c8cdab</data>
+  <data key="d2">7</data>
+</node>
+<edge source="0x8af8485e1f178be06386cd3877fde20626e0284f" target="0x094446fbfeb9e6c9cf8cff98582e96c5138f8f7f">
+  <data key="d3">0x198506eb751a4841b3a3bf5d44cdfd86f4b8322fa5990f272f0c7a5098520b40</data>
+  <data key="d4">1701967011</data>
+  <data key="d5">31250000000.0</data>
+  <data key="d6">1e+18</data>
+  <data key="d7">AVALANCHE</data>
+  <data key="d8">1.0</data>
+</edge>
+<edge source="0x8af8485e1f178be06386cd3877fde20626e0284f" target="0xfa5fe357f49fda80bee8ba46fc1d7f0d21b14969">
+  <data key="d3">0x42cd4f36ee9afd29c7c77444902faf851b5eefb6a60f2720457ed83229e22a1b</data>
+  <data key="d4">1701967235</data>
+  <data key="d5">31250000000.0</data>
+  <data key="d6">1.44262687e+18</data>
+  <data key="d7">AVALANCHE</data>
+  <data key="d8">1.0</data>
+</edge>
+<edge source="0x8af8485e1f178be06386cd3877fde20626e0284f" target="0x7bfc0c62a745e97c6f7ece2e99926c8e6f317632">
+  <data key="d3">0x204b27fcdb1f0bb90f85dcf63d500cc97ef7c40f0e5c2f43a919efdb3c16a084</data>
+  <data key="d4">1701967389</data>
+  <data key="d5">31250000000.0</data>
+  <data key="d6">1.65888742e+18</data>
+  <data key="d7">AVALANCHE</data>
+  <data key="d8">1.0</data>
+</edge>
+<edge source="0x8af8485e1f178be06386cd3877fde20626e0284f" target="0x7f9f917f24e64eb9f43c4602ce456f5853a27919">
+  <data key="d3">0x868f33cf5a4f4ed4092856b2c448f420f7656fdc40e03164d330a764e6cbc8d7</data>
+  <data key="d4">1701967597</data>
+  <data key="d5">31672319124.0</data>
+  <data key="d6">9.64234273e+18</data>
+  <data key="d7">AVALANCHE</data>
+  <data key="d8">1.0</data>
+</edge>
+<edge source="0x8af8485e1f178be06386cd3877fde20626e0284f" target="0x161db687329db79ae17c8576292733bbead92352">
+  <data key="d3">0xa3cdb9e970de20f85054e139a234b0802030b668ecee3119a9f73c0d96b51ca3</data>
+  <data key="d4">1701967817</data>
+  <data key="d5">31250000000.0</data>
+  <data key="d6">4.2851679e+17</data>
+  <data key="d7">AVALANCHE</data>
+  <data key="d8">1.0</data>
+</edge>
+<edge source="0x8af8485e1f178be06386cd3877fde20626e0284f" target="0x2f993766e8e1ef9288b1f33f6aa244911a0a77a7">
+  <data key="d3">0xd535c073094097a130437a634e6dde62a4c3d99816709d7455ee28e8c9fe595f</data>
+  <data key="d4">1701967835</data>
+  <data key="d5">31250000000.0</data>
+  <data key="d6">2.04994409e+18</data>
+  <data key="d7">AVALANCHE</data>
+  <data key="d8">1.0</data>
+</edge>
+<edge source="0xe1597df1f0e1920f7a296cef27babb40baeeabfc" target="0x167730965b42f6ef57b53f1961f40f16deb48218">
+  <data key="d3">0x4211faff7fef065ec1b91fca7387a9629a71886a4f44f5974019423f13d4cd9b</data>
+  <data key="d4">1701967025</data>
+  <data key="d5">31250000000.0</data>
+  <data key="d6">1.5625e+16</data>
+  <data key="d7">AVALANCHE</data>
+  <data key="d8">1.0</data>
+</edge>
+<edge source="0xe1597df1f0e1920f7a296cef27babb40baeeabfc" target="0xf1b6582286b59d1d7c6f58971f16b09d3a2910e7">
+  <data key="d3">0x6af32d70453a95ee8da47f91b43a886222b979b5a455840a6ab30f940f132ab5</data>
+  <data key="d4">1701967565</data>
+  <data key="d5">31555981569.0</data>
+  <data key="d6">1.57779907845e+16</data>
+  <data key="d7">AVALANCHE</data>
+  <data key="d8">5.36725494772836e-19</data>
+</edge>
+<edge source="0xe1597df1f0e1920f7a296cef27babb40baeeabfc" target="0x78044ced0835094079a03470163ac93116cf7d1a">
+  <data key="d3">0x1d2bf917c7b1c5bcc3d5e6d856f1c0496802a351350bd7510db3662cdae14182</data>
+  <data key="d4">1701967809</data>
+  <data key="d5">31412232865.0</data>
+  <data key="d6">1.5688072776e+16</data>
+  <data key="d7">AVALANCHE</data>
+  <data key="d8">1.0</data>
+</edge>
+<edge source="0xf89d7b9c864f589bbf53a82105107622b35eaa40" target="0x0a09f1d932c3578f0ff297fb30c5d206bb5e3015">
+  <data key="d3">0xfed6a2b7954685a580f66049eb271162ff1b39088af7dd57a25822dc191befa8</data>
+  <data key="d4">1701967028</data>
+  <data key="d5">50067237253.0</data>
+  <data key="d6">9.19e+16</data>
+  <data key="d7">AVALANCHE</data>
+  <data key="d8">1.0</data>
+</edge>
+<edge source="0xf89d7b9c864f589bbf53a82105107622b35eaa40" target="0x9406b040fc205b665499deb80202a430d201e44c">
+  <data key="d3">0x85357b5c9b8df049ab57eff9c76279b63294ae9078600e380f55a11c5fa1ecfa</data>
+  <data key="d4">1701967044</data>
+  <data key="d5">50000000000.0</data>
+  <data key="d6">4.918e+17</data>
+  <data key="d7">AVALANCHE</data>
+  <data key="d8">1.0</data>
+</edge>
+<edge source="0xf89d7b9c864f589bbf53a82105107622b35eaa40" target="0xc6516effa29e4d10b93b46b025a2a227e26ecd2f">
+  <data key="d3">0x263ee6a015f8acd693f6c90475be4676ed4af29a1edf34719187afa940970972</data>
+  <data key="d4">1701967055</data>
+  <data key="d5">50000000000.0</data>
+  <data key="d6">1.194516525e+19</data>
+  <data key="d7">AVALANCHE</data>
+  <data key="d8">1.0</data>
+</edge>
+<edge source="0xf89d7b9c864f589bbf53a82105107622b35eaa40" target="0x7f6bf36fc635ef14a8c5328b8dfc751bd8284029">
+  <data key="d3">0xb4f52f16e10e96113d8d76562536bdcdf64431f2fd4f347bb97e393755d7bfa9</data>
+  <data key="d4">1701967201</data>
+  <data key="d5">50000000000.0</data>
+  <data key="d6">2.0052811e+19</data>
+  <data key="d7">AVALANCHE</data>
+  <data key="d8">2.0</data>
+</edge>
+<edge source="0xf89d7b9c864f589bbf53a82105107622b35eaa40" target="0x17feb3511d9b9c0c08ebb9fdc9e320d658c4ab59">
+  <data key="d3">0x7be5e90a7b89d87cb632071007e66a0085bb4a490ce6f4f1e638d0ee0ac510d0</data>
+  <data key="d4">1701967385</data>
+  <data key="d5">50000000000.0</data>
+  <data key="d6">1.43176612e+18</data>
+  <data key="d7">AVALANCHE</data>
+  <data key="d8">1.0</data>
+</edge>
+<edge source="0xf89d7b9c864f589bbf53a82105107622b35eaa40" target="0x0cbb7d912fa48a7e482d979af4dd31a3df43dad5">
+  <data key="d3">0x59dce69f9a3b423f53d0780c9fd685eb196fd21e84bd749a23cb0c1836baa8f7</data>
+  <data key="d4">1701967471</data>
+  <data key="d5">50093045046.0</data>
+  <data key="d6">8e+20</data>
+  <data key="d7">AVALANCHE</data>
+  <data key="d8">1.0</data>
+</edge>
+<edge source="0xf89d7b9c864f589bbf53a82105107622b35eaa40" target="0xa2a8f9fffa357a246c5d52e819ed34ff5f5bd5b9">
+  <data key="d3">0xc151f723b3ec74de9b4e62083aa68cace95dd6fb4ce877e941ea4677e103696e</data>
+  <data key="d4">1701967486</data>
+  <data key="d5">50034420186.0</data>
+  <data key="d6">9.99991e+17</data>
+  <data key="d7">AVALANCHE</data>
+  <data key="d8">1.0</data>
+</edge>
+<edge source="0xf89d7b9c864f589bbf53a82105107622b35eaa40" target="0xa95b83af96d0b8a90bd507f2bd82ad8f3dbb86bc">
+  <data key="d3">0xd4cabdd4f5f08caca0f1e4b1b2848898721ed7a554c3da25c998040a2ce969a1</data>
+  <data key="d4">1701967872</data>
+  <data key="d5">50000000000.0</data>
+  <data key="d6">2e+18</data>
+  <data key="d7">AVALANCHE</data>
+  <data key="d8">5.128380456413062e-19</data>
+</edge>
+<edge source="0xd29b6d445763ac97c72ebef3fa77577523dac5f2" target="0x36eba88acffef2a56f59144e22abaf8f7625abad">
+  <data key="d3">0x9a3807f40f63f0fac3d7052eca4d7573d5535eaf583109e4e714d5f72e9cbc0e</data>
+  <data key="d4">1701967037</data>
+  <data key="d5">26500000000.0</data>
+  <data key="d6">2.214571169e+18</data>
+  <data key="d7">AVALANCHE</data>
+  <data key="d8">4.997500662462433e-18</data>
+</edge>
+<edge source="0x36eba88acffef2a56f59144e22abaf8f7625abad" target="0xf89d7b9c864f589bbf53a82105107622b35eaa40">
+  <data key="d3">0xb1ad5afab2354c0465e8fdaf59b62ea355fba37c54c0b0df97cbd6e4ed32c90e</data>
+  <data key="d4">1701967371</data>
+  <data key="d5">50000000000.0</data>
+  <data key="d6">2.014471169e+18</data>
+  <data key="d7">AVALANCHE</data>
+  <data key="d8">9.626822698529271e-21</data>
+</edge>
+<edge source="0x333d17d3b42bf7930dbc6e852ca7bcf560a69003" target="0xf001f53167e89c77dfef6d2db24c6c597546e8a8">
+  <data key="d3">0xd4a3aabb4195ef3a6d9b471dcccbc8ae1f9f476b40b112e23393663f13995f71</data>
+  <data key="d4">1701967038</data>
+  <data key="d5">31250000000.0</data>
+  <data key="d6">8.21662e+17</data>
+  <data key="d7">AVALANCHE</data>
+  <data key="d8">1.0</data>
+</edge>
+<edge source="0x333d17d3b42bf7930dbc6e852ca7bcf560a69003" target="0x5bc0262814f361dc59d9d0179dba1f1598049cf2">
+  <data key="d3">0xaddb4fb7afd9de123c0a7812e4c773f81641231e3303932bbf1dbc0425e24ce9</data>
+  <data key="d4">1701967843</data>
+  <data key="d5">31250000000.0</data>
+  <data key="d6">4.0290089e+17</data>
+  <data key="d7">AVALANCHE</data>
+  <data key="d8">1.0</data>
+</edge>
+<edge source="0x916eb4df6b08aa7b6b4fdcc0243afab24f043bdb" target="0x782f1e99b5dc9750e8413e382cca5616f167a1dd">
+  <data key="d3">0x871de6411282fa90948ab24a56f4d0a7b361f4fd0caf0667859a2baab0ec34b9</data>
+  <data key="d4">1701967047</data>
+  <data key="d5">34606434447.0</data>
+  <data key="d6">6.26174844876613e+17</data>
+  <data key="d7">AVALANCHE</data>
+  <data key="d8">1.385274944298388e-15</data>
+</edge>
+<edge source="0x782f1e99b5dc9750e8413e382cca5616f167a1dd" target="0x7ed53f6e3de6b2b4156fa8e618506e60d8e65843">
+  <data key="d3">0x84a58e5b3401bc08c81cc2233fc0880e15150ee4a83344fd60d59a551fa7638a</data>
+  <data key="d4">1701967089</data>
+  <data key="d5">31250000000.0</data>
+  <data key="d6">6.25452969876613e+17</data>
+  <data key="d7">AVALANCHE</data>
+  <data key="d8">4.78139538625291e-20</data>
+</edge>
+<edge source="0xa16f524a804beaed0d791de0aa0b5836295a2a84" target="0x58e1702f90af3584b58b1f11a95f608341a360db">
+  <data key="d3">0x91aee7214168dfea705c0bc19894d409da85c083406bbe25da81fbb2329e3f5a</data>
+  <data key="d4">1701967053</data>
+  <data key="d5">29000000000.0</data>
+  <data key="d6">9.926e+17</data>
+  <data key="d7">AVALANCHE</data>
+  <data key="d8">2.0300446512980002e-18</data>
+</edge>
+<edge source="0xa16f524a804beaed0d791de0aa0b5836295a2a84" target="0x05156a5dc3dfb2e8aaf6194e26e347f949223524">
+  <data key="d3">0x49a7b92b117fb72727ab90845f1d708b2868688c87eb7b03a0148e0987ff23d9</data>
+  <data key="d4">1701967101</data>
+  <data key="d5">29000000000.0</data>
+  <data key="d6">2.1936e+18</data>
+  <data key="d7">AVALANCHE</data>
+  <data key="d8">1.0</data>
+</edge>
+<edge source="0xa16f524a804beaed0d791de0aa0b5836295a2a84" target="0x93cca489a606b278647bdf64be474869524c67a7">
+  <data key="d3">0x5a14c452e031d0c2a39baacb9c76cbfc0b91744f145651654fa20a678814996c</data>
+  <data key="d4">1701967172</data>
+  <data key="d5">29100151188.0</data>
+  <data key="d6">7.3981803e+17</data>
+  <data key="d7">AVALANCHE</data>
+  <data key="d8">1.0</data>
+</edge>
+<edge source="0xa16f524a804beaed0d791de0aa0b5836295a2a84" target="0xd5c5c47095e7fe01ebcbca8734d754489bd5795b">
+  <data key="d3">0x734a421a893976a8c2dfc11f67b20506e563b4ddc71e5dbb6c38899f58f57fa1</data>
+  <data key="d4">1701967191</data>
+  <data key="d5">29571476929.0</data>
+  <data key="d6">2.5e+18</data>
+  <data key="d7">AVALANCHE</data>
+  <data key="d8">1.0</data>
+</edge>
+<edge source="0xa16f524a804beaed0d791de0aa0b5836295a2a84" target="0x7797449367d0355dcfed394bcc0769b889df8e3c">
+  <data key="d3">0xee2ac969af21b32bd1be27223839009e95400d45e3a50e04ae78408a00f3d3a5</data>
+  <data key="d4">1701967293</data>
+  <data key="d5">29000000000.0</data>
+  <data key="d6">9.936e+17</data>
+  <data key="d7">AVALANCHE</data>
+  <data key="d8">1.0</data>
+</edge>
+<edge source="0xa16f524a804beaed0d791de0aa0b5836295a2a84" target="0x9c07690e6d9429c6cfde9a38ade73f0d4bad08bf">
+  <data key="d3">0xb2d7b560c98ca7d3b64dc96536b0e5749533e7335c5960894d828418ec43d7eb</data>
+  <data key="d4">1701967311</data>
+  <data key="d5">29044137916.0</data>
+  <data key="d6">9.7251324e+17</data>
+  <data key="d7">AVALANCHE</data>
+  <data key="d8">1.0</data>
+</edge>
+<edge source="0xa16f524a804beaed0d791de0aa0b5836295a2a84" target="0xabd6e49725ceb96fa995661e1d40a72450394c8a">
+  <data key="d3">0xb7f10086804c37c613190c8399f06daf3f282f1b658ad69f9f94d3414c90275f</data>
+  <data key="d4">1701967462</data>
+  <data key="d5">29000000000.0</data>
+  <data key="d6">4.09032089e+18</data>
+  <data key="d7">AVALANCHE</data>
+  <data key="d8">1.0</data>
+</edge>
+<edge source="0xa16f524a804beaed0d791de0aa0b5836295a2a84" target="0x3e767cdfde1847d9fa175f7914a5aa1d3c9622e2">
+  <data key="d3">0x7fd7b32f51f014df12c60a964c5fab4f8054b86271ee8d203c204f95b821e544</data>
+  <data key="d4">1701967503</data>
+  <data key="d5">29000000000.0</data>
+  <data key="d6">1.16e+17</data>
+  <data key="d7">AVALANCHE</data>
+  <data key="d8">1.0</data>
+</edge>
+<edge source="0xa16f524a804beaed0d791de0aa0b5836295a2a84" target="0x33520f8c82f26c7481f7b8edc88c20dc15647909">
+  <data key="d3">0x75ac34b2fc6b35f36650d8be01a8af80c5759ddc9e1e71933ac28dde3144c6dc</data>
+  <data key="d4">1701967532</data>
+  <data key="d5">29637036628.0</data>
+  <data key="d6">2.1936e+18</data>
+  <data key="d7">AVALANCHE</data>
+  <data key="d8">1.0</data>
+</edge>
+<edge source="0xa16f524a804beaed0d791de0aa0b5836295a2a84" target="0x2815519e1006f0c105161a1056c5808620299f87">
+  <data key="d3">0x3abf2f187591503e7a3570494ed7161805ad4d8e29917331c6bb577e63ecbfd2</data>
+  <data key="d4">1701967611</data>
+  <data key="d5">29030090301.0</data>
+  <data key="d6">9.926e+17</data>
+  <data key="d7">AVALANCHE</data>
+  <data key="d8">1.0</data>
+</edge>
+<edge source="0xa16f524a804beaed0d791de0aa0b5836295a2a84" target="0xfdfb008d62787750e7696bd11af2fb0063ac229e">
+  <data key="d3">0x62562b1b0e6ed03f3bcce120b5ec416e4595dbdc0649648baf256ac349bc906c</data>
+  <data key="d4">1701967611</data>
+  <data key="d5">29030090301.0</data>
+  <data key="d6">1.99846e+19</data>
+  <data key="d7">AVALANCHE</data>
+  <data key="d8">7.025135935718032e-20</data>
+</edge>
+<edge source="0xa16f524a804beaed0d791de0aa0b5836295a2a84" target="0xafe34e9b537b95f09ec65f71ff0fe70c77e1b238">
+  <data key="d3">0xd282a1da33f414422ef3abddf4ef137c8381c026b946b1eafe0962f9b27c77e5</data>
+  <data key="d4">1701967792</data>
+  <data key="d5">29219383697.0</data>
+  <data key="d6">4.8060208e+17</data>
+  <data key="d7">AVALANCHE</data>
+  <data key="d8">1.0</data>
+</edge>
+<edge source="0xa16f524a804beaed0d791de0aa0b5836295a2a84" target="0xa5d6b2acdcb0befedccac2bc8e0e5c505090d6c4">
+  <data key="d3">0x241d55d75ab941379104c6a0e798bfb941d62be45166482416e6b3071f1f1af7</data>
+  <data key="d4">1701967882</data>
+  <data key="d5">29155867548.0</data>
+  <data key="d6">1.115856332e+19</data>
+  <data key="d7">AVALANCHE</data>
+  <data key="d8">1.0</data>
+</edge>
+<edge source="0x58e1702f90af3584b58b1f11a95f608341a360db" target="0x38b55b829381bd8e128c8842d43c2b80df890ce0">
+  <data key="d3">0xfd0b337e6e289a44367ceb39317be0b0f382b7071fc4d482b5d3dc6814046ef9</data>
+  <data key="d4">1701967109</data>
+  <data key="d5">26650000000.0</data>
+  <data key="d6">5e+17</data>
+  <data key="d7">AVALANCHE</data>
+  <data key="d8">1.0</data>
+</edge>
+<edge source="0xffb3118124cdaebd9095fa9a479895042018cac2" target="0x6381a7d087e4038b0271bba5fc8787f6be9b3861">
+  <data key="d3">0x6961f6386e7fb9f0691dc4bd74545228fa33aecbd8b127cfd90cfead66f5c5f0</data>
+  <data key="d4">1701967263</data>
+  <data key="d5">33500000000.0</data>
+  <data key="d6">4.4895e+20</data>
+  <data key="d7">AVALANCHE</data>
+  <data key="d8">2.0</data>
+</edge>
+<edge source="0xffb3118124cdaebd9095fa9a479895042018cac2" target="0xde82ae7623dc90d0a9847195b7faa70c07d0b292">
+  <data key="d3">0x5049f2a309e23491045ed39ad408ce5256089d9e068af9b7aa81169026f544d0</data>
+  <data key="d4">1701967143</data>
+  <data key="d5">33500000000.0</data>
+  <data key="d6">5e+16</data>
+  <data key="d7">AVALANCHE</data>
+  <data key="d8">1.0</data>
+</edge>
+<edge source="0xffb3118124cdaebd9095fa9a479895042018cac2" target="0x455c1887e39be8c3fc4585f1c8014b64e9b5363c">
+  <data key="d3">0x3ab8c012d8b0fd61bb6fa67898e72bbc07f21bacbf1868ebfee6e15101900637</data>
+  <data key="d4">1701967162</data>
+  <data key="d5">33500000000.0</data>
+  <data key="d6">5e+16</data>
+  <data key="d7">AVALANCHE</data>
+  <data key="d8">1.0</data>
+</edge>
+<edge source="0xffb3118124cdaebd9095fa9a479895042018cac2" target="0xd51ca86598d080e4112581a5e57d61893ed3ac8f">
+  <data key="d3">0x0260e750a22520f099cc679cabc6d90b650bccba9c32847e761f6b450e87c850</data>
+  <data key="d4">1701967505</data>
+  <data key="d5">33500000000.0</data>
+  <data key="d6">4.95e+19</data>
+  <data key="d7">AVALANCHE</data>
+  <data key="d8">2.0</data>
+</edge>
+<edge source="0xffb3118124cdaebd9095fa9a479895042018cac2" target="0xcb2cc9e98ec0422f93960ea96f5ff0251daf5291">
+  <data key="d3">0xb7b2fe1826b26453cef61820ff7677d0de85a9b2bf9d56ece00def8e62a4ebee</data>
+  <data key="d4">1701967341</data>
+  <data key="d5">33500000000.0</data>
+  <data key="d6">5e+16</data>
+  <data key="d7">AVALANCHE</data>
+  <data key="d8">1.0</data>
+</edge>
+<edge source="0xffb3118124cdaebd9095fa9a479895042018cac2" target="0x3dcfa9d75b98419073439cb1cf501bdff8a13911">
+  <data key="d3">0xe792ac71cc7c942bd1b75d793cf0ea296d10626940852691b6443bf2e8ecae69</data>
+  <data key="d4">1701967449</data>
+  <data key="d5">33500000000.0</data>
+  <data key="d6">3.2e+17</data>
+  <data key="d7">AVALANCHE</data>
+  <data key="d8">1.0</data>
+</edge>
+<edge source="0xffb3118124cdaebd9095fa9a479895042018cac2" target="0x1f1141c8541f2ecd52c2d4193ed054a90cc7342a">
+  <data key="d3">0x76db86b570f8da92077c61ddb7a2293a5e1bcb98f59bfce8ebaa867c8ec62474</data>
+  <data key="d4">1701967626</data>
+  <data key="d5">33500000000.0</data>
+  <data key="d6">5.48e+18</data>
+  <data key="d7">AVALANCHE</data>
+  <data key="d8">1.0</data>
+</edge>
+<edge source="0xffb3118124cdaebd9095fa9a479895042018cac2" target="0x817000ba363eb00765a3ed6905fcb4c9efe7434d">
+  <data key="d3">0x6126f93b3cac590a19df438fb166069ede3560047b9a32b58cdfe6c69848586d</data>
+  <data key="d4">1701967863</data>
+  <data key="d5">33500000000.0</data>
+  <data key="d6">5e+16</data>
+  <data key="d7">AVALANCHE</data>
+  <data key="d8">1.0</data>
+</edge>
+<edge source="0x27079ca6d619410b1d0d88d51813aaf9b5c09aee" target="0xef8537aa2488d7e80005b079a59fa214f5e8d139">
+  <data key="d3">0x41a335def6c24d751e1bfdc57052422c75862109fbed0b1bb9c5f91e8e9174ec</data>
+  <data key="d4">1701967086</data>
+  <data key="d5">26500000000.0</data>
+  <data key="d6">2.109e+18</data>
+  <data key="d7">AVALANCHE</data>
+  <data key="d8">7.547168387326259e-17</data>
+</edge>
+<edge source="0xef8537aa2488d7e80005b079a59fa214f5e8d139" target="0xa16f524a804beaed0d791de0aa0b5836295a2a84">
+  <data key="d3">0xbc28b636d9f9161a029c50aada3e73c6b2c2907aad5206eae742315efe14b845</data>
+  <data key="d4">1701967893</data>
+  <data key="d5">29000000000.0</data>
+  <data key="d6">2.09575e+18</data>
+  <data key="d7">AVALANCHE</data>
+  <data key="d8">3.339438438019025e-19</data>
+</edge>
+<edge source="0x7ed53f6e3de6b2b4156fa8e618506e60d8e65843" target="0x507a9e04a864c8c5bfe987a6cf8eab830f1ffce7">
+  <data key="d3">0x28a8f2827b89d977895576e2497d0218e54c0586bd31ef0ae2622cd9bf4e63fa</data>
+  <data key="d4">1701967361</data>
+  <data key="d5">31250000000.0</data>
+  <data key="d6">3.84009971e+19</data>
+  <data key="d7">AVALANCHE</data>
+  <data key="d8">1.0</data>
+</edge>
+<edge source="0x7ed53f6e3de6b2b4156fa8e618506e60d8e65843" target="0x4c82bdb028945578060f200f1ae2af603c301805">
+  <data key="d3">0x171bd05322df4f2d1b1552bfd8a5eb1446dac2ca4b03ad6f81cdbea7ce2291e6</data>
+  <data key="d4">1701967427</data>
+  <data key="d5">31250000000.0</data>
+  <data key="d6">2.393220728e+19</data>
+  <data key="d7">AVALANCHE</data>
+  <data key="d8">1.0</data>
+</edge>
+<edge source="0x7ed53f6e3de6b2b4156fa8e618506e60d8e65843" target="0x76b1b47d3137fd2830c35b8fc754e55a1976e668">
+  <data key="d3">0x1c0290b34ad947a1e8c90374dd73e8e1343fd676510aac52ff8c16959af9cb23</data>
+  <data key="d4">1701967807</data>
+  <data key="d5">31376145552.0</data>
+  <data key="d6">2.2863447e+18</data>
+  <data key="d7">AVALANCHE</data>
+  <data key="d8">1.0</data>
+</edge>
+<edge source="0x0a023fd60477d54a6639e41705817ef408e1a39d" target="0x7ed53f6e3de6b2b4156fa8e618506e60d8e65843">
+  <data key="d3">0xbe71d649d70c6f71f96b2b1ea21cbb9e4903919f121bc4273d7f913c9cfced95</data>
+  <data key="d4">1701967089</data>
+  <data key="d5">31250000000.0</data>
+  <data key="d6">5.0877934375e+20</data>
+  <data key="d7">AVALANCHE</data>
+  <data key="d8">2.0523787833250072e-21</data>
+</edge>
+<edge source="0x0a023fd60477d54a6639e41705817ef408e1a39d" target="0x4a4e859565d9b563afc8e63641542455cff0dfd2">
+  <data key="d3">0xc5aebb202dde5b1bd94074fec2d86b19ca36ebbae5d368cc8524e36b85a9ec34</data>
+  <data key="d4">1701967447</data>
+  <data key="d5">31250000000.0</data>
+  <data key="d6">5.8847934375e+20</data>
+  <data key="d7">AVALANCHE</data>
+  <data key="d8">3.403553927326041e-21</data>
+</edge>
+<edge source="0x1e85925e86c9cf811b090874ec0f61ba7e40a052" target="0x5d303f3b248031a577e5565964e6ed8d18deda8c">
+  <data key="d3">0xa64ee7155abd717829fb7336c6846f60bc08d5ce8a0eb4e9caf03fc96562399d</data>
+  <data key="d4">1701967105</data>
+  <data key="d5">26500000000.0</data>
+  <data key="d6">7.238717998718789e+17</data>
+  <data key="d7">AVALANCHE</data>
+  <data key="d8">1.3852722700698307e-15</data>
+</edge>
+<edge source="0x5d303f3b248031a577e5565964e6ed8d18deda8c" target="0x333d17d3b42bf7930dbc6e852ca7bcf560a69003">
+  <data key="d3">0xa5f5b3e67c8d1582883b2208c759fd2d295418691fe2e1d821fa6e2b7f56ca14</data>
+  <data key="d4">1701967146</data>
+  <data key="d5">31250000000.0</data>
+  <data key="d6">7.231499248718789e+17</data>
+  <data key="d7">AVALANCHE</data>
+  <data key="d8">4.775992689483501e-18</data>
+</edge>
+<edge source="0xb562d1eb328f0da4f59bdb6eed979d3eeb2482c8" target="0xbfe42c1df7015780a2c0c51a3c0ff0d3b37b38b3">
+  <data key="d3">0x9a7c95c400da440fe01bf5857883cfa810b9bc8929754ba5d43538b86fd27665</data>
+  <data key="d4">1701967133</data>
+  <data key="d5">25000000000.0</data>
+  <data key="d6">4.2e+17</data>
+  <data key="d7">AVALANCHE</data>
+  <data key="d8">1.0</data>
+</edge>
+<edge source="0xb562d1eb328f0da4f59bdb6eed979d3eeb2482c8" target="0xbfdc77dedc8dc2f860889312f24a8b71ddbf3348">
+  <data key="d3">0xfcb3a6f2b0409e6bba98221a36a0cc2558376cf97427685a41308d845f3572d4</data>
+  <data key="d4">1701967159</data>
+  <data key="d5">27525357831.0</data>
+  <data key="d6">4.2e+17</data>
+  <data key="d7">AVALANCHE</data>
+  <data key="d8">3.931657855110439e-09</data>
+</edge>
+<edge source="0xb562d1eb328f0da4f59bdb6eed979d3eeb2482c8" target="0x82b032410f7cd28b054cab28bf1c14ee893acd17">
+  <data key="d3">0x3a06dfe4c67d5a083c01cb334b0f14c2e76d0fe4ef37935c4839e9f0b9cbdec7</data>
+  <data key="d4">1701967169</data>
+  <data key="d5">27577698772.0</data>
+  <data key="d6">4.2e+17</data>
+  <data key="d7">AVALANCHE</data>
+  <data key="d8">1.0</data>
+</edge>
+<edge source="0xb562d1eb328f0da4f59bdb6eed979d3eeb2482c8" target="0x8f4a27a8107a5f024eda09e86b050b7ee0019435">
+  <data key="d3">0x6101728ea8b46a486e3ead0ba908b822c846920a619a391bfad4eb0f90b9a24f</data>
+  <data key="d4">1701967185</data>
+  <data key="d5">28252910763.0</data>
+  <data key="d6">4.2e+17</data>
+  <data key="d7">AVALANCHE</data>
+  <data key="d8">1.0</data>
+</edge>
+<edge source="0xb562d1eb328f0da4f59bdb6eed979d3eeb2482c8" target="0xb8402324c97b8a7aa8cbf45ec3fcfb4a41c7f9a2">
+  <data key="d3">0x651abebcaef7b023dd79bb18aa91870a85fb026e4d6cc70738f9a8b79a19e77f</data>
+  <data key="d4">1701967207</data>
+  <data key="d5">31297278103.0</data>
+  <data key="d6">4.2e+17</data>
+  <data key="d7">AVALANCHE</data>
+  <data key="d8">1.0</data>
+</edge>
+<edge source="0xb562d1eb328f0da4f59bdb6eed979d3eeb2482c8" target="0x4d2ee0808cd2dd39a52a120b6eed37fd4e0dbf80">
+  <data key="d3">0xb8b319b866f6c9c7b67a403aae8a2ccaf0867b900006e225faed4353c8adc026</data>
+  <data key="d4">1701967227</data>
+  <data key="d5">26650000000.0</data>
+  <data key="d6">4.2e+17</data>
+  <data key="d7">AVALANCHE</data>
+  <data key="d8">1.0</data>
+</edge>
+<edge source="0x6081258689a75d253d87ce902a8de3887239fe80" target="0xc6e9d5ebe78fc119caec0fa6826cd255f3ab5e15">
+  <data key="d3">0x71e0080e67e7f4aab1ad70f1de4cd1914ff1b93faebb6c0340cf53d7eb55badb</data>
+  <data key="d4">1701967141</data>
+  <data key="d5">26046000000.0</data>
+  <data key="d6">3.719442954e+18</data>
+  <data key="d7">AVALANCHE</data>
+  <data key="d8">1.0</data>
+</edge>
+<edge source="0x6081258689a75d253d87ce902a8de3887239fe80" target="0x57cdb842468dae11759e5b38ca03d33ff2d683e1">
+  <data key="d3">0x6cd71efd5d2d935f1b81983e7bf398424f392ca15087060f2c6c55a6e5a2aa22</data>
+  <data key="d4">1701967839</data>
+  <data key="d5">27048000000.0</data>
+  <data key="d6">1.082431992e+18</data>
+  <data key="d7">AVALANCHE</data>
+  <data key="d8">2.0</data>
+</edge>
+<edge source="0x6081258689a75d253d87ce902a8de3887239fe80" target="0xef2331e2ebfdf51202320552f03378d584af0554">
+  <data key="d3">0xb0b8b8286ade3978624a3e32e5fe6086f2343aa57090852e9168d85cde89e171</data>
+  <data key="d4">1701967291</data>
+  <data key="d5">26360000000.0</data>
+  <data key="d6">3.20262169e+17</data>
+  <data key="d7">AVALANCHE</data>
+  <data key="d8">4.543198378361226e-17</data>
+</edge>
+<edge source="0x6081258689a75d253d87ce902a8de3887239fe80" target="0xc72af333f3d6220a964676b9c8700dd1912df7b4">
+  <data key="d3">0xa755bf3a26c1c7ef0bc85186e92d017ef6a5685d6443a67e34ae423417e971dd</data>
+  <data key="d4">1701967645</data>
+  <data key="d5">26696000000.0</data>
+  <data key="d6">9.3443971e+18</data>
+  <data key="d7">AVALANCHE</data>
+  <data key="d8">2.0</data>
+</edge>
+<edge source="0x6081258689a75d253d87ce902a8de3887239fe80" target="0xe02c4d5900fdb06a53890c421ab6fd595f00eef8">
+  <data key="d3">0x8f01dd8c59d60d7c7ba60e3380a577facd3f8463f41eab1879542f09b194d177</data>
+  <data key="d4">1701967329</data>
+  <data key="d5">26354000000.0</data>
+  <data key="d6">5.560446566e+18</data>
+  <data key="d7">AVALANCHE</data>
+  <data key="d8">1.831422309927497e-15</data>
+</edge>
+<edge source="0x6081258689a75d253d87ce902a8de3887239fe80" target="0x1c84469ee010a5c1fa0771aaf450bde11e34fbcf">
+  <data key="d3">0xdeb1eebc8c8a7ac74590f3a14849fb6ffe285a11338e15737717f96bc1f88d82</data>
+  <data key="d4">1701967449</data>
+  <data key="d5">26000000000.0</data>
+  <data key="d6">1.86538255e+17</data>
+  <data key="d7">AVALANCHE</data>
+  <data key="d8">1.1555583051954003e-17</data>
+</edge>
+<edge source="0xbfdc77dedc8dc2f860889312f24a8b71ddbf3348" target="0xfa4db8eaf03876f1fc3d1d8a5daa5db10eb2bbe4">
+  <data key="d3">0xf30cae136cbc5da00d8e9fb618581060aa38e6b74878f5053bf75c2e6e6ae0c9</data>
+  <data key="d4">1701967257</data>
+  <data key="d5">27016666667.0</data>
+  <data key="d6">4.2e+17</data>
+  <data key="d7">AVALANCHE</data>
+  <data key="d8">1.0</data>
+</edge>
+<edge source="0x1c84469ee010a5c1fa0771aaf450bde11e34fbcf" target="0x4803b81b8b7843f128244bd7a71ccf9e6aeeeb05">
+  <data key="d3">0x61f433f47b7b08920e841056512449c74e9254aa4c043887de0a0541febebce3</data>
+  <data key="d4">1701967170</data>
+  <data key="d5">26621026481.0</data>
+  <data key="d6">1e+17</data>
+  <data key="d7">AVALANCHE</data>
+  <data key="d8">1.0</data>
+</edge>
+<edge source="0x4a4e859565d9b563afc8e63641542455cff0dfd2" target="0xace2bae9ca244b5807ff3ad280ad1867b2b55c9d">
+  <data key="d3">0x60ac575670095187b72962104d6ecd01c3e1dfbbd032cd3a12d95f273ab5ac92</data>
+  <data key="d4">1701967628</data>
+  <data key="d5">31418485077.0</data>
+  <data key="d6">8.5827392e+17</data>
+  <data key="d7">AVALANCHE</data>
+  <data key="d8">1.0</data>
+</edge>
+<edge source="0xa95b83af96d0b8a90bd507f2bd82ad8f3dbb86bc" target="0x60c3476642d92006b6b377c10aac7698b4785a27">
+  <data key="d3">0xf4c9edb1ca3f50f0ae8ebfa74e2da41de9036475a35dfff51d25aa6fba3ece5f</data>
+  <data key="d4">1701967251</data>
+  <data key="d5">50000000000.0</data>
+  <data key="d6">5.01e+16</data>
+  <data key="d7">AVALANCHE</data>
+  <data key="d8">1.0</data>
+</edge>
+<edge source="0xa95b83af96d0b8a90bd507f2bd82ad8f3dbb86bc" target="0x5df5f89ea98f73f1312d56d19ee8b27d62553277">
+  <data key="d3">0x89d1fbdcaffb8239be9dd5db9caa5230f06ac13dcbd5495e6eb17fb66a36cee7</data>
+  <data key="d4">1701967687</data>
+  <data key="d5">51184559043.0</data>
+  <data key="d6">5e+16</data>
+  <data key="d7">AVALANCHE</data>
+  <data key="d8">1.0</data>
+</edge>
+<edge source="0xa95b83af96d0b8a90bd507f2bd82ad8f3dbb86bc" target="0xc69d77c3a329013f2f247374bad11c06b746c45d">
+  <data key="d3">0x677cc915a7825cc2ecfcf6228ff005fbc7dfb0058bd3eb816dad10b997ac6d46</data>
+  <data key="d4">1701967873</data>
+  <data key="d5">50000000000.0</data>
+  <data key="d6">5.01e+16</data>
+  <data key="d7">AVALANCHE</data>
+  <data key="d8">1.0</data>
+</edge>
+<edge source="0xab48a72250ef6aefa2769d223f93131432cc93a5" target="0x333d17d3b42bf7930dbc6e852ca7bcf560a69003">
+  <data key="d3">0x7ebd3a2b6d5e208e2714d68b70544f4965457b6206cf04c9005a9c71f25dacc0</data>
+  <data key="d4">1701967266</data>
+  <data key="d5">31250000000.0</data>
+  <data key="d6">8.6669934375e+20</data>
+  <data key="d7">AVALANCHE</data>
+  <data key="d8">1.1546183328712991e-21</data>
+</edge>
+<edge source="0xab48a72250ef6aefa2769d223f93131432cc93a5" target="0x4a4e859565d9b563afc8e63641542455cff0dfd2">
+  <data key="d3">0x3249918414f64ddd2ffd8415a851c67e92c60a0a171602fe6be4e3af21d975c0</data>
+  <data key="d4">1701967749</data>
+  <data key="d5">32704838465.0</data>
+  <data key="d6">8.446993101432315e+20</data>
+  <data key="d7">AVALANCHE</data>
+  <data key="d8">1.1850573236804917e-21</data>
+</edge>
+<edge source="0xef2331e2ebfdf51202320552f03378d584af0554" target="0x4a4e859565d9b563afc8e63641542455cff0dfd2">
+  <data key="d3">0x8283a5dda2f98412968d0de5eed7a6445689807e355a1b23d45225ed9bfdb8a4</data>
+  <data key="d4">1701967326</data>
+  <data key="d5">31250000000.0</data>
+  <data key="d6">3.42273089381564e+17</data>
+  <data key="d7">AVALANCHE</data>
+  <data key="d8">1.937981375872905e-18</data>
+</edge>
+<edge source="0x9cc548536d8ec1d6c89e6ddd3b0ceea350fe73dc" target="0x5553d886325b1b90302b2edd3089b5041f813ca2">
+  <data key="d3">0x0d9139699f361f5c3db13a0dd2e0a40de132718b7ee08fbc97dea3a03e858478</data>
+  <data key="d4">1701967293</data>
+  <data key="d5">29000000000.0</data>
+  <data key="d6">4081000000000000.0</data>
+  <data key="d7">AVALANCHE</data>
+  <data key="d8">1.0</data>
+</edge>
+<edge source="0x9cc548536d8ec1d6c89e6ddd3b0ceea350fe73dc" target="0xd58a22fe8d44ffae92fd47e9f0540a3588dcfd47">
+  <data key="d3">0x8359dffe8d274c4b309888c358f57e3cb1072c825cf481149a9befa7eed679f2</data>
+  <data key="d4">1701967293</data>
+  <data key="d5">29000000000.0</data>
+  <data key="d6">4081000000000000.0</data>
+  <data key="d7">AVALANCHE</data>
+  <data key="d8">1.0</data>
+</edge>
+<edge source="0x9cc548536d8ec1d6c89e6ddd3b0ceea350fe73dc" target="0x3fd8f488c9f992f67b7b51c994e17c345d3a3861">
+  <data key="d3">0xcbab428ecfdfa4cbba22df06291ab58aada48584b5cf8417d104f57d2f64980b</data>
+  <data key="d4">1701967293</data>
+  <data key="d5">29000000000.0</data>
+  <data key="d6">4081000000000000.0</data>
+  <data key="d7">AVALANCHE</data>
+  <data key="d8">1.0</data>
+</edge>
+<edge source="0x9cc548536d8ec1d6c89e6ddd3b0ceea350fe73dc" target="0x23afac6ce35d751a69237bd12bc9288fc9ee72fa">
+  <data key="d3">0x9ebef9a5837461db99336707d2c4625fec1084ffce6a67a0f2d570d777ee42d8</data>
+  <data key="d4">1701967893</data>
+  <data key="d5">29000000000.0</data>
+  <data key="d6">4081000000000000.0</data>
+  <data key="d7">AVALANCHE</data>
+  <data key="d8">1.0</data>
+</edge>
+<edge source="0x9cc548536d8ec1d6c89e6ddd3b0ceea350fe73dc" target="0xce363a2c9e4512a20bb4dc6bc502a407e1f9f7d3">
+  <data key="d3">0x9075b5332f3315265ad5000eb4b2537302e2c545152478af6068d3b2d77034e3</data>
+  <data key="d4">1701967893</data>
+  <data key="d5">29000000000.0</data>
+  <data key="d6">4081000000000000.0</data>
+  <data key="d7">AVALANCHE</data>
+  <data key="d8">1.0</data>
+</edge>
+<edge source="0x9cc548536d8ec1d6c89e6ddd3b0ceea350fe73dc" target="0x7afe237797046cca3870455c412ea6e77c63dffb">
+  <data key="d3">0xadbb3e74f90e31ca3f37a23b5648f42c9f4e1fce4eb7823bd8319770535ecefd</data>
+  <data key="d4">1701967893</data>
+  <data key="d5">29000000000.0</data>
+  <data key="d6">4081000000000000.0</data>
+  <data key="d7">AVALANCHE</data>
+  <data key="d8">1.0</data>
+</edge>
+<edge source="0x9cc548536d8ec1d6c89e6ddd3b0ceea350fe73dc" target="0xb08758eabe40ce9f0a1bec5f9966cb8f05c8cdab">
+  <data key="d3">0xacf39484a28b39d09676a1b1d43f59276ba7919c3c5f081d325e64ffed3c10ce</data>
+  <data key="d4">1701967893</data>
+  <data key="d5">29000000000.0</data>
+  <data key="d6">4081000000000000.0</data>
+  <data key="d7">AVALANCHE</data>
+  <data key="d8">1.0</data>
+</edge>
+<edge source="0x187b2d576ba7ec2141c180a96edd0f202492f36b" target="0x0082395fc0b59ee2a4cac909a57347c9d69e3eda">
+  <data key="d3">0xf14fcbf9f748478d793e20b5491224933146d53f27e7db9c83f50c0411a99001</data>
+  <data key="d4">1701967326</data>
+  <data key="d5">50000000000.0</data>
+  <data key="d6">3.6757824e+17</data>
+  <data key="d7">AVALANCHE</data>
+  <data key="d8">1.0</data>
+</edge>
+<edge source="0x187b2d576ba7ec2141c180a96edd0f202492f36b" target="0x97f69380ec77eff6eb5655f437aecb1a6cf7fc44">
+  <data key="d3">0x2e8cbaac58ebc88939793bea9f5d92d67e2eb3cceb4d13f3f69fe7760d058a7d</data>
+  <data key="d4">1701967777</data>
+  <data key="d5">50000000000.0</data>
+  <data key="d6">1.49995e+20</data>
+  <data key="d7">AVALANCHE</data>
+  <data key="d8">2.0</data>
+</edge>
+<edge source="0x187b2d576ba7ec2141c180a96edd0f202492f36b" target="0x4fe755208076fa44e9c8db03b3063e3ef4b579a7">
+  <data key="d3">0xb61498902b7689d14724c52f89000b2eddf832950859eb063c9ee98c4b977da9</data>
+  <data key="d4">1701967536</data>
+  <data key="d5">50000000000.0</data>
+  <data key="d6">3.7131326647e+19</data>
+  <data key="d7">AVALANCHE</data>
+  <data key="d8">1.0</data>
+</edge>
+<edge source="0x187b2d576ba7ec2141c180a96edd0f202492f36b" target="0x6d979991bd652a304391e9c217b1fbb301d6a16b">
+  <data key="d3">0x9fdf0111afbb548781c8b657b14101db08f1c8712a207760e20451a18b523451</data>
+  <data key="d4">1701967626</data>
+  <data key="d5">50000000000.0</data>
+  <data key="d6">2.3873e+19</data>
+  <data key="d7">AVALANCHE</data>
+  <data key="d8">1.0</data>
+</edge>
+<edge source="0x187b2d576ba7ec2141c180a96edd0f202492f36b" target="0xa8d4cc5733475f9f23a5a459c1885cbfbc5a5865">
+  <data key="d3">0xdaaca3ef8965f088a0f8714f77dea15f4515593d7bee5fde6a26e8de77d6daad</data>
+  <data key="d4">1701967717</data>
+  <data key="d5">50000000000.0</data>
+  <data key="d6">1.7698e+19</data>
+  <data key="d7">AVALANCHE</data>
+  <data key="d8">1.0</data>
+</edge>
+<edge source="0x187b2d576ba7ec2141c180a96edd0f202492f36b" target="0xd993a6ef72746a6c00cbea6795a98d8af8406b24">
+  <data key="d3">0x7f0b4199ad13ed1ef33e02bca8145c27a3478e8b527f9540f2a15fb295e3891f</data>
+  <data key="d4">1701967837</data>
+  <data key="d5">50000000000.0</data>
+  <data key="d6">2.98995e+20</data>
+  <data key="d7">AVALANCHE</data>
+  <data key="d8">1.0</data>
+</edge>
+<edge source="0xe02c4d5900fdb06a53890c421ab6fd595f00eef8" target="0xffb3118124cdaebd9095fa9a479895042018cac2">
+  <data key="d3">0xfa019f6ba6a952dc88817015d3588733acb62492e0539f0f5d6ea2a43a49e48c</data>
+  <data key="d4">1701967536</data>
+  <data key="d5">26000467083.0</data>
+  <data key="d6">5.55990054264585e+18</data>
+  <data key="d7">AVALANCHE</data>
+  <data key="d8">1.5543348778233178e-20</data>
+</edge>
+<edge source="0xfc52b6d756e286894fd6f8dd0c9494c85d8117d3" target="0x1ab954d8561429c406e9d12ac41d30732e0e070e">
+  <data key="d3">0x75288570290f5697b434730dccd2e95b9b3b81c28b9bfc6ed5189fa45ba41e21</data>
+  <data key="d4">1701967367</data>
+  <data key="d5">30000000000.0</data>
+  <data key="d6">3.7e+20</data>
+  <data key="d7">AVALANCHE</data>
+  <data key="d8">2.557538216198889e-15</data>
+</edge>
+<edge source="0x1ab954d8561429c406e9d12ac41d30732e0e070e" target="0xa16f524a804beaed0d791de0aa0b5836295a2a84">
+  <data key="d3">0x7fefec284530b3d5b118389e8bfcaf888b47c49a7268fc2e09abb4ed42ca5ebb</data>
+  <data key="d4">1701967893</data>
+  <data key="d5">29000000000.0</data>
+  <data key="d6">3.70000391e+20</data>
+  <data key="d7">AVALANCHE</data>
+  <data key="d8">2.729603389329652e-21</data>
+</edge>
+<edge source="0x5ee4e2cb4530d6f4a94f9ee0dc4b84053e95e1d7" target="0xf89d7b9c864f589bbf53a82105107622b35eaa40">
+  <data key="d3">0x787ba1f3b881b2808e07bf83f9875510b91ffb18702ab9ff280c6f3922b245df</data>
+  <data key="d4">1701967371</data>
+  <data key="d5">50000000000.0</data>
+  <data key="d6">8.5717323114e+19</data>
+  <data key="d7">AVALANCHE</data>
+  <data key="d8">6.2632580189986755e-21</data>
+</edge>
+<edge source="0x86a7cd0eaefd993a38175f9c0ba63300e3806176" target="0xf89d7b9c864f589bbf53a82105107622b35eaa40">
+  <data key="d3">0xbed876d5db82aa09911e009d409007db73eb0ec300357787f310ec2c01161f18</data>
+  <data key="d4">1701967371</data>
+  <data key="d5">50000000000.0</data>
+  <data key="d6">1.1154403475e+19</data>
+  <data key="d7">AVALANCHE</data>
+  <data key="d8">9.419618162030536e-21</data>
+</edge>
+<edge source="0x40827b193931fc33b879cc2915acd2ddc27a59d7" target="0xf89d7b9c864f589bbf53a82105107622b35eaa40">
+  <data key="d3">0x12558aab674c7f72eaaade4576a5441ca10cf2d73ac3d9fb6f7954df2fabc637</data>
+  <data key="d4">1701967371</data>
+  <data key="d5">50000000000.0</data>
+  <data key="d6">3.90599e+19</data>
+  <data key="d7">AVALANCHE</data>
+  <data key="d8">8.021288768059273e-21</data>
+</edge>
+<edge source="0x1f91d714ba84e905dd18dfe1b0337f3517e62f43" target="0xf89d7b9c864f589bbf53a82105107622b35eaa40">
+  <data key="d3">0x74b9630cdee9ab8cca11f7d6caed01766a716e80ba36fb33f873e73598dcae22</data>
+  <data key="d4">1701967371</data>
+  <data key="d5">50000000000.0</data>
+  <data key="d6">7.03895e+18</data>
+  <data key="d7">AVALANCHE</data>
+  <data key="d8">9.511801789785107e-21</data>
+</edge>
+<edge source="0x60e2e28cdaed95682d224291bde89088184a6664" target="0xf89d7b9c864f589bbf53a82105107622b35eaa40">
+  <data key="d3">0x47abdbc3c38e2296d965e37d844b5ca4c08b0f2a08bbb85c471ea2dc944888c9</data>
+  <data key="d4">1701967371</data>
+  <data key="d5">50000000000.0</data>
+  <data key="d6">3.77999e+19</data>
+  <data key="d7">AVALANCHE</data>
+  <data key="d8">8.08255549150352e-21</data>
+</edge>
+<edge source="0x320c66420a392e0d47ebc4edc04adec113fefd7b" target="0xf89d7b9c864f589bbf53a82105107622b35eaa40">
+  <data key="d3">0xa5812e62ed23173cc479e52e0012022ed468ba72fe4115df1a3131d2696462a5</data>
+  <data key="d4">1701967371</data>
+  <data key="d5">50000000000.0</data>
+  <data key="d6">3.308927115773585e+18</data>
+  <data key="d7">AVALANCHE</data>
+  <data key="d8">9.596924684351587e-21</data>
+</edge>
+<edge source="0x1eb182245b87d2f0d99bfdadea4958207e7fd1d5" target="0xf89d7b9c864f589bbf53a82105107622b35eaa40">
+  <data key="d3">0x6aadf6f4746031b3c7c4b99c6478df4011b92041dea4b479fc5a531a9f116345</data>
+  <data key="d4">1701967371</data>
+  <data key="d5">50000000000.0</data>
+  <data key="d6">1.8644999910085284e+18</data>
+  <data key="d7">AVALANCHE</data>
+  <data key="d8">9.627157991691271e-21</data>
+</edge>
+<edge source="0x0609c83e046fb3f04d5395a69aea8d64f35a2556" target="0x48619f9d2ff2dd7ec5e8380df4debe7389ff0cf0">
+  <data key="d3">0x10ddec8a442d861ae695b09904c9f4b3aa1e573c80e9130e0b7de0e0bf36c70f</data>
+  <data key="d4">1701967497</data>
+  <data key="d5">26509140841.0</data>
+  <data key="d6">4.929736308042339e+18</data>
+  <data key="d7">AVALANCHE</data>
+  <data key="d8">7.537555450221581e-16</data>
+</edge>
+<edge source="0x48619f9d2ff2dd7ec5e8380df4debe7389ff0cf0" target="0xffb3118124cdaebd9095fa9a479895042018cac2">
+  <data key="d3">0xccfad80aaa31f71e78a6e5648f2822db50c7a946a57cb965b174ac53a7eeaea7</data>
+  <data key="d4">1701967717</data>
+  <data key="d5">26533800992.0</data>
+  <data key="d6">4.928409617992739e+18</data>
+  <data key="d7">AVALANCHE</data>
+  <data key="d8">1.5586435162591727e-20</data>
+</edge>
+<edge source="0xb23360ccdd9ed1b15d45e5d3824bb409c8d7c460" target="0x3fe97d28a6569e7fc3021b6d838e901d0f057847">
+  <data key="d3">0x6367b0c9123a8ce8260fbed5ae35d20b257d3477141e0108ced66aaf9ca80eda</data>
+  <data key="d4">1701967528</data>
+  <data key="d5">26305785255.0</data>
+  <data key="d6">2.3804666e+17</data>
+  <data key="d7">AVALANCHE</data>
+  <data key="d8">7.537554294865324e-16</data>
+</edge>
+<edge source="0x3fe97d28a6569e7fc3021b6d838e901d0f057847" target="0xffb3118124cdaebd9095fa9a479895042018cac2">
+  <data key="d3">0x181334ea8b1964338534f4394b15d79500b6e0b2ffcdd70279c54128ba1fcd89</data>
+  <data key="d4">1701967717</data>
+  <data key="d5">26533800992.0</data>
+  <data key="d6">2.367199699504e+17</data>
+  <data key="d7">AVALANCHE</data>
+  <data key="d8">1.587144132351055e-20</data>
+</edge>
+<edge source="0xf1b6582286b59d1d7c6f58971f16b09d3a2910e7" target="0xe1a0ddeb9b5b55e489977b438764e60e314e917c">
+  <data key="d3">0x4c6a1db4e2f518090726056f53bdfd89e0f2a11731c80b353758b68e6d5ed6f1</data>
+  <data key="d4">1701967749</data>
+  <data key="d5">32704838465.0</data>
+  <data key="d6">1.87892779291309e+18</data>
+  <data key="d7">AVALANCHE</data>
+  <data key="d8">2.559324684168219e-21</data>
+</edge>
+<edge source="0xe1a0ddeb9b5b55e489977b438764e60e314e917c" target="0x6767526a362ec6c6b1df185478e4f01506b73ff3">
+  <data key="d3">0xe24f43a5a725c411cab01807484b6458f9274d5375cd07deea56375d2f0dcbe7</data>
+  <data key="d4">1701967565</data>
+  <data key="d5">31555981569.0</data>
+  <data key="d6">3.92607e+20</data>
+  <data key="d7">AVALANCHE</data>
+  <data key="d8">1.0</data>
+</edge>
+<edge source="0x8e5c2aa2b1184c9dac83bdd939148a92fc73b79f" target="0xa89f37b4025b18d4a956e679e9c929efec7a3255">
+  <data key="d3">0x233f73758ce4199586ddc8e5f72c696084eb2ca0e56192a9233d254df1135575</data>
+  <data key="d4">1701967575</data>
+  <data key="d5">31855114784.0</data>
+  <data key="d6">2.3410177167358955e+20</data>
+  <data key="d7">AVALANCHE</data>
+  <data key="d8">1.7461290081821714e-15</data>
+</edge>
+<edge source="0xa89f37b4025b18d4a956e679e9c929efec7a3255" target="0xffb3118124cdaebd9095fa9a479895042018cac2">
+  <data key="d3">0x5ffb5592c3e65b98665cba447e3789d4665b15e2ec25462dd9e3311e52712f60</data>
+  <data key="d4">1701967717</data>
+  <data key="d5">26533800992.0</data>
+  <data key="d6">2.3410119898353995e+20</data>
+  <data key="d7">AVALANCHE</data>
+  <data key="d8">4.4492466796311784e-21</data>
+</edge>
+<edge source="0xfdfb008d62787750e7696bd11af2fb0063ac229e" target="0xb790588f7a8a166f6d90afee88b9059cbe3a3f66">
+  <data key="d3">0x7b345fd5feba5818f6fc121c83b6de6eb847dab6c8ca4c68c1977e3846108f53</data>
+  <data key="d4">1701967701</data>
+  <data key="d5">27505922350.0</data>
+  <data key="d6">8e+18</data>
+  <data key="d7">AVALANCHE</data>
+  <data key="d8">1.0</data>
+</edge>
+<edge source="0xfdfb008d62787750e7696bd11af2fb0063ac229e" target="0xc4d83146a01712716f018887475b50403adf0cb4">
+  <data key="d3">0xed6b7933ef3c46bb6bbf7a3adb84c1584394bec125935a1383b80e0242366b04</data>
+  <data key="d4">1701967744</data>
+  <data key="d5">27870153249.0</data>
+  <data key="d6">3.5e+18</data>
+  <data key="d7">AVALANCHE</data>
+  <data key="d8">1.0</data>
+</edge>
+<edge source="0xfc34d4f20bc8edd722693bf11d1e40d145043cb4" target="0xf1b6582286b59d1d7c6f58971f16b09d3a2910e7">
+  <data key="d3">0x24b9fde24a8447b54a96859acafc03d41682afe8d3a01cf0089235695bd0b254</data>
+  <data key="d4">1701967680</data>
+  <data key="d5">26253768784.0</data>
+  <data key="d6">1.8653236336504402e+18</data>
+  <data key="d7">AVALANCHE</data>
+  <data key="d8">7.350689642008069e-17</data>
+</edge>
+<edge source="0xbce53995e7a99cf58f5ed09dcf9d610ee4bc3ba2" target="0xff9cdad8d5a67e40b18a5683c2668a4316f6115f">
+  <data key="d3">0x63058b0aa9940ffb96c74edfe90410b593d84e2004011f21dd44b9c29f167370</data>
+  <data key="d4">1701967693</data>
+  <data key="d5">28950000000.0</data>
+  <data key="d6">1.7529121991094602e+19</data>
+  <data key="d7">AVALANCHE</data>
+  <data key="d8">1.7461378658183698e-15</data>
+</edge>
+<edge source="0xff9cdad8d5a67e40b18a5683c2668a4316f6115f" target="0xffb3118124cdaebd9095fa9a479895042018cac2">
+  <data key="d3">0x6009e43d18b222bf8c82464cc5640a01b58f5df124eb8c102d093084993a6331</data>
+  <data key="d4">1701967895</data>
+  <data key="d5">26533800992.0</data>
+  <data key="d6">1.7528549301045002e+19</data>
+  <data key="d7">AVALANCHE</data>
+  <data key="d8">1.422059924710056e-20</data>
+</edge>
+<edge source="0x9c82b2720e57a7535523421d80966326436de8b5" target="0x4a4e859565d9b563afc8e63641542455cff0dfd2">
+  <data key="d3">0xc7940cd9144605539211b199d84f2214a327e7a5dc5389fa3989158903b31d8c</data>
+  <data key="d4">1701967809</data>
+  <data key="d5">31412232865.0</data>
+  <data key="d6">9.528993400024209e+20</data>
+  <data key="d7">AVALANCHE</data>
+  <data key="d8">1.0503748584238283e-21</data>
+</edge>
+<edge source="0x0ae132794c6b69003ad4f8e33ab1e8eb8499724c" target="0xa16f524a804beaed0d791de0aa0b5836295a2a84">
+  <data key="d3">0x690e94fb48037de92277a2d93bbeec33ee9be40444b28417fc708a9115117823</data>
+  <data key="d4">1701967893</data>
+  <data key="d5">29000000000.0</data>
+  <data key="d6">1.92123391e+18</data>
+  <data key="d7">AVALANCHE</data>
+  <data key="d8">3.354476445976892e-19</data>
+</edge>
+<edge source="0x48fc318e96c290c118030fa39fc31060115a85c8" target="0xa16f524a804beaed0d791de0aa0b5836295a2a84">
+  <data key="d3">0x9e16f6dec06ab8bc9fc229c26b01d17ab4d281de0a462396d3d27296c8576972</data>
+  <data key="d4">1701967893</data>
+  <data key="d5">29000000000.0</data>
+  <data key="d6">1.399999891e+21</data>
+  <data key="d7">AVALANCHE</data>
+  <data key="d8">7.161512424132676e-22</data>
+</edge>
+</graph></graphml>

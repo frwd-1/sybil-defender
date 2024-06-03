@@ -1,0 +1,10 @@
+STABLECOIN_ADDRESSES = {
+    "0x8AC76a51cc950d9822D68b83fE1Ad97B32Cd580d",  # USDC
+    "0x9702230a8ea53601f5cd2dc00fdbc13d4df4a8c7",  # Tether
+    "0xb97ef9ef8734c71904d8002f8b6bc66dd9c48a6e",  # USD Coin
+}
+
+EXCHANGES = {
+    "0x0D0707963952f2fBA59dD06f2b425ace40b492Fe",  # Gate.io
+    "0x9f8c163cba728e99993abe7495f06c0a3c8ac8b9",  # Binance
+}
