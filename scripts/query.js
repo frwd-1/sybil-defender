@@ -62,7 +62,7 @@ const removeDuplicates = (data) => {
   });
 };
 
-const fetchAndWriteEntitiesToCSV = async (walletAddresses, outputFile) => {
+const fetchAndWriteEntitiesToCSV = async (walletAddresses, outputFile, processedWalletsFile) => {
   console.log('Running fetchAndWriteEntitiesToCSV...');
 
   const normalizedWalletAddresses = walletAddresses.map(addr => addr.trim().toLowerCase());
@@ -158,7 +158,7 @@ const fetchAndWriteEntitiesToCSV = async (walletAddresses, outputFile) => {
     const uniqueEntities = removeDuplicates(allEntities);
 
     // Writing unique entities to CSV
-    const writeStream = fs.createWriteStream(outputFile);
+    const writeStream = fs.createWriteStream(outputFile, { flags: 'a' });
     uniqueEntities.forEach(entity => {
       if (!csvHeadersSet) {
         csvHeaders = Object.keys(entity);
@@ -170,6 +170,13 @@ const fetchAndWriteEntitiesToCSV = async (walletAddresses, outputFile) => {
     });
     writeStream.end();
 
+    // Write processed wallets to a file
+    const processedWalletsStream = fs.createWriteStream(processedWalletsFile, { flags: 'a' });
+    uniqueEntities.forEach(entity => {
+      processedWalletsStream.write(`${entity.wallet}\n`);
+    });
+    processedWalletsStream.end();
+
   } catch (error) {
     console.error('Error fetching or writing data:', error);
     if (error.networkError && error.networkError.result && error.networkError.result.errors) {
@@ -180,19 +187,30 @@ const fetchAndWriteEntitiesToCSV = async (walletAddresses, outputFile) => {
   }
 };
 
+const getNewWallets = (allWallets, processedWallets) => {
+  const processedSet = new Set(processedWallets);
+  return allWallets.filter(wallet => !processedSet.has(wallet));
+};
+
 const walletsFilePath = path.join(__dirname, 'wallets.txt');
+const processedWalletsFilePath = path.join(__dirname, 'processed_wallets.txt');
 const walletAddresses = readWalletsFromFile(walletsFilePath);
+const processedWallets = readWalletsFromFile(processedWalletsFilePath);
+const newWalletAddresses = getNewWallets(walletAddresses, processedWallets);
 const outputFile = path.join(__dirname, 'Wallets_Labels_Match.csv');
 
-fetchAndWriteEntitiesToCSV(walletAddresses, outputFile);
+fetchAndWriteEntitiesToCSV(newWalletAddresses, outputFile, processedWalletsFilePath);
 
 // Function to monitor continuously
-const monitorWalletsContinuously = async (walletAddresses) => {
+const monitorWalletsContinuously = async (walletsFilePath, processedWalletsFilePath, outputFile) => {
   setInterval(async () => {
     console.log('Checking for updates...');
-    await fetchAndWriteEntitiesToCSV(walletAddresses, outputFile);
-  }, 360000); // Check every minute, adjust as needed
+    const walletAddresses = readWalletsFromFile(walletsFilePath);
+    const processedWallets = readWalletsFromFile(processedWalletsFilePath);
+    const newWalletAddresses = getNewWallets(walletAddresses, processedWallets);
+    await fetchAndWriteEntitiesToCSV(newWalletAddresses, outputFile, processedWalletsFilePath);
+  }, 60000); // Check every hour, adjust as needed
 };
 
 // Start continuous monitoring
-monitorWalletsContinuously(walletAddresses);
+monitorWalletsContinuously(walletsFilePath, processedWalletsFilePath, outputFile);
