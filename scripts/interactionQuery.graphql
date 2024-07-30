@@ -1,0 +1,24 @@
+# interactionQuery.graphql
+
+query InteractionQuery($input: LabelsInput) {
+  labels(input: $input) {
+    labels {
+      label {
+        label
+        metadata
+        entity
+        entityType
+        confidence
+      }
+      source {
+        chainId
+      }
+    }
+    pageInfo {
+      endCursor {
+        pageToken
+      }
+      hasNextPage
+    }
+  }
+}
