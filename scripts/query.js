@@ -126,7 +126,7 @@ const fetchAndWriteEntitiesToCSV = async (walletAddresses, outputFile, processed
             const entityData = {
               wallet: label.label.entity.trim().toLowerCase(),
               chainId: label.source.chainId,
-              label: label.label.label, // Include the label information
+              label: label.label.label, 
               entityType: label.label.entityType,
               confidence: label.label.confidence,
             };
@@ -138,7 +138,7 @@ const fetchAndWriteEntitiesToCSV = async (walletAddresses, outputFile, processed
               }
             });
 
-            allEntities.push(entityData); // Store entityData for processing duplicates later
+            allEntities.push(entityData); 
           }
         });
 
@@ -154,10 +154,8 @@ const fetchAndWriteEntitiesToCSV = async (walletAddresses, outputFile, processed
 
     console.log(`Total number of pages retrieved: ${pageCount}`);
 
-    // Remove duplicates
     const uniqueEntities = removeDuplicates(allEntities);
 
-    // Writing unique entities to CSV
     const writeStream = fs.createWriteStream(outputFile, { flags: 'a' });
     uniqueEntities.forEach(entity => {
       if (!csvHeadersSet) {
@@ -170,7 +168,6 @@ const fetchAndWriteEntitiesToCSV = async (walletAddresses, outputFile, processed
     });
     writeStream.end();
 
-    // Write processed wallets to a file
     const processedWalletsStream = fs.createWriteStream(processedWalletsFile, { flags: 'a' });
     uniqueEntities.forEach(entity => {
       processedWalletsStream.write(`${entity.wallet}\n`);
@@ -209,7 +206,7 @@ const monitorWalletsContinuously = async (walletsFilePath, processedWalletsFileP
     const processedWallets = readWalletsFromFile(processedWalletsFilePath);
     const newWalletAddresses = getNewWallets(walletAddresses, processedWallets);
     await fetchAndWriteEntitiesToCSV(newWalletAddresses, outputFile, processedWalletsFilePath);
-  }, 60000); // Check every hour, adjust as needed
+  }, 60000); // Checking every 60 seconds, adjust as needed
 };
 
 // Start continuous monitoring
