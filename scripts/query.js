@@ -1,5 +1,7 @@
 const path = require('path');
-require('dotenv').config({ path: path.resolve(__dirname, '../.env') });
+const envPath = path.resolve(__dirname, '.env');
+require('dotenv').config({ path: envPath });
+console.log(`Using .env file at: ${envPath}`);
 const { ApolloClient, InMemoryCache, HttpLink, gql } = require('@apollo/client/core');
 const { setContext } = require('@apollo/client/link/context');
 const fs = require('fs');
