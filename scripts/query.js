@@ -93,7 +93,7 @@ const fetchAndWriteEntitiesToCSV = async (walletAddresses, outputFile, processed
           input: {
             entities: batch,
             sourceIds: ["0x349f4fc9abbd76fdcdb9b0a73b0ef1c3d53935d7ad41a3cf8b8bd32fcf514113"],
-            afterCreatedAtDate: "2024-2-1",
+            afterCreatedAtDate: "2024-3-1",
             chainIds: [
               42161, // Arbitrum 
               56, // Binance Smart Chain 
