@@ -17,7 +17,3 @@ async def analyze_typology(_analyzed_methods):
         return "Asset Farming"
 
     return ", ".join(typologies)
-
-
-# TODO: normalize?
-# TODO: should it be approve on the same contract?
