@@ -45,7 +45,6 @@ def handle_transaction(transaction_event: TransactionEvent):
     loop = asyncio.get_event_loop()
     network_name = transaction_event.network.name
 
-    # neo4j-kafka is expected to be initialized outside of the agent
     if DATABASE_TYPE != "neo4jkafka":
         if not loop.is_running():
             loop.run_until_complete(initialize_database(network_name))

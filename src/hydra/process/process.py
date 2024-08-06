@@ -8,7 +8,6 @@ from src.hydra.graph_controllers.graph_controller import (
 
 from src.hydra.dynamic.dynamic_suspicious import (
     merge_final_graphs,
-    # merge_final_graphs_neo4j,
 )
 from src.hydra.graph_controllers.final_graph_controller import load_graph, save_graph
 
@@ -20,7 +19,6 @@ from src.hydra.analysis.community_analysis.base_analyzer import (
     analyze_communities,
 )
 
-# from src.neo4j.driver import get_neo4j_driver
 from src.hydra.utils import globals
 import networkx as nx
 import json
@@ -43,16 +41,14 @@ def create_key_mapping(root, ns):
     for key in root.findall(".//graphml:key", ns):
         attr_name = key.attrib["attr.name"]
         key_id = key.attrib["id"]
-        key_mapping[key_id] = attr_name  # Map key_id to attr_name
+        key_mapping[key_id] = attr_name
     return key_mapping
 
 
 async def extract_node_data(node, key_mapping):
     data = {}
     for child in node:
-        attr_name = key_mapping.get(
-            child.get("key")
-        )  # Use the key to get the attr.name
+        attr_name = key_mapping.get(child.get("key"))
         data[attr_name] = child.text
 
     labels = data.get("typology", "").split(";")
@@ -65,7 +61,6 @@ async def extract_node_data(node, key_mapping):
         valid_labels.get(label, label) for label in labels if label in valid_labels
     ]
 
-    # Use the correct attribute names for properties
     return {
         "labels": neo4j_labels,
         "props": {
@@ -90,7 +85,6 @@ async def extract_edge_data(edge, key_mapping):
         )  # Use the key to get the attr.name
         data[attr_name] = child.text
 
-    # Use the correct attribute names for properties
     return {
         "source": edge.get("source"),
         "target": edge.get("target"),
@@ -174,185 +168,13 @@ async def load_graphml_into_neo4j(driver, network_name):
         print(f"Failed to load GraphML into Neo4j and label nodes: {e}")
 
 
-# async def detect_and_assign_communities_WCC():
-#     driver = get_neo4j_driver()
-#     if driver is None:
-#         print("Failed to get Neo4j driver")
-#         return
-
-#     with driver.session() as session:
-#         # Propagate existing component IDs to adjacent nodes
-#         propagated_count = session.run(
-#             """
-#             MATCH (w1:Wallet)-[:SENT]->(w2:Wallet)
-#             WHERE w1.componentId IS NOT NULL AND w2.componentId IS NULL
-#             SET w2.componentId = w1.componentId
-#             RETURN count(w2) AS propagatedCount
-#             """
-#         ).single()["propagatedCount"]
-#         print(f"Component IDs propagated to {propagated_count} adjacent nodes.")
-
-#         # Determine the highest current component ID
-#         max_component_id_result = session.run(
-#             """
-#             MATCH (w:Wallet)
-#             WHERE w.componentId IS NOT NULL
-#             RETURN coalesce(max(w.componentId), 0) AS maxComponentId
-#             """
-#         ).single()
-#         max_component_id = max_component_id_result["maxComponentId"]
-#         print(f"Maximum component ID found: {max_component_id}")
-
-#         hydraGraph = "hydraGraph"
-
-#         result = session.run(
-#             """
-#             CALL gds.graph.project.cypher(
-#                 'hydraGraph',
-#                 'MATCH (n:Wallet) WHERE n.communityId IS NULL RETURN id(n) AS id',
-#                 'MATCH (n:Wallet)-[r]->(m:Wallet) WHERE n.communityId IS NULL AND m.communityId IS NULL RETURN id(n) AS source, id(m) AS target'
-#             )
-#             YIELD graphName, nodeCount, relationshipCount
-#             """
-#         )
-
-#         for record in result:
-#             print(
-#                 f"Graph name: {record['graphName']}, Node count: {record['nodeCount']}, Relationship count: {record['relationshipCount']}"
-#             )
-
-#         # Run WCC on the filtered graph
-#         print("Running WCC on the filtered graph...")
-#         wcc_result = session.run(
-#             """
-#             CALL gds.wcc.write($graphName, {
-#                 writeProperty: 'componentId'
-#             })
-#             YIELD componentCount
-#             """,
-#             parameters={"graphName": hydraGraph},
-#         )
-#         component_count = wcc_result.single()["componentCount"]
-#         print(f"Component Count for new communities: {component_count}")
-
-#         print("Updating component IDs...")
-#         result = session.run(
-#             """
-#             MATCH (n)
-#             WHERE n.componentId IS NOT NULL
-#             SET n.componentId = n.componentId + $max_component_id
-#             """,
-#             {"max_component_id": max_component_id},
-#         )
-#         print(f"Component IDs updated.")
-
-#         # Handle small components
-#         small_components = session.run(
-#             """
-#             MATCH (n)
-#             WHERE n:Wallet OR n:Contract AND n.componentId IS NOT NULL
-#             WITH n.componentId AS componentId, count(n) AS size
-#             WHERE size <= 5
-#             RETURN componentId
-#         """
-#         )
-#         small_component_ids = [record["componentId"] for record in small_components]
-
-#         for component_id in small_component_ids:
-#             session.run(
-#                 f"""
-#                 MATCH (n)
-#                 WHERE n.componentId = {component_id}
-#                 DETACH DELETE n
-#             """
-#             )
-#         print(f"Deleted nodes and edges from small components.")
-
-#         # Update contracts with component interactions
-#         session.run(
-#             """
-#             MATCH (w:Wallet)-[:CALLED]->(c:Contract)
-#             WHERE w.componentId IS NOT NULL
-#             WITH c, collect(DISTINCT w.componentId) AS components
-#             SET c.interactions = components
-#         """
-#         )
-#         print("Contracts updated with component interactions.")
-
-#         # Delete contracts that have no interactions with any components
-#         session.run(
-#             """
-#             MATCH (c:Contract)
-#             WHERE c.interactions IS NULL OR size(c.interactions) = 0
-#             DETACH DELETE c
-#         """
-#         )
-#         print("Lonely contracts deleted.")
-
-#         # Drop the graph projection
-#         # session.run(f"CALL gds.graph.drop('{hydraGraphFiltered}')")
-#         # print(f"Projection {hydraGraphFiltered} deleted.")
-#         session.run(f"CALL gds.graph.drop('{hydraGraph}')")
-#         print(f"Projection {hydraGraph} deleted.")
-
-
-# async def detect_and_assign_communities_louvain():
-#     driver = get_neo4j_driver()
-#     if driver is None:
-#         print("Failed to get Neo4j driver")
-#         return
-
-#     hydraGraph = "hydraGraph"
-
-#     with driver.session() as session:
-#         check_graph_query = f"""
-#         CALL gds.graph.exists('{hydraGraph}')
-#         YIELD exists
-#         """
-#         graph_exists_result = session.run(check_graph_query).single()["exists"]
-
-#         if not graph_exists_result:
-#             print(
-#                 f"Graph {hydraGraph} does not exist in the GDS catalog. Creating the graph..."
-#             )
-#             create_graph_query = f"""
-#             CALL gds.graph.project(
-#                 '{hydraGraph}',
-#                 ['Wallet', 'Contract'],
-#                 {{
-#                     SENT: {{
-#                         type: 'SENT',
-#                         properties: ['amount']
-#                     }}
-#                 }}
-#             )
-#             """
-#             session.run(create_graph_query)
-#             print(f"Graph {hydraGraph} created.")
-
-#         community_detection_query = f"""
-#         CALL gds.louvain.write('{hydraGraph}', {{
-#             relationshipTypes: ['SENT'],
-#             writeProperty: 'communityId'
-#         }})
-#         YIELD communityCount, modularity
-#         """
-#         result = session.run(community_detection_query)
-#         for record in result:
-#             print(
-#                 f"Community Count: {record['communityCount']}, Modularity: {record['modularity']}"
-#             )
-
-#         print("Communities detected and assigned.")
-
-
 async def process_transactions(network_name: str):
     findings = []
     print("network name is:", network_name)
 
     async with get_async_session(network_name) as session:
         print("pulling all transfers...")
-        # Assume the Transfer model and select function are defined elsewhere
+
         transfer_result = await session.execute(
             select(Transfer).where(
                 (Transfer.processed == False) & (Transfer.chainId == network_name)
@@ -403,14 +225,6 @@ async def process_transactions(network_name: str):
         f"src/g/graphs/updated_{network_name}_subgraph.graphml",
     )
 
-    # print("is initial batch?", globals.is_initial_batch)
-    # if not globals.is_initial_batch:
-    #     merge_new_communities(
-    #         updated_subgraph,
-    #     )
-    # else:
-    #     globals.G2 = updated_subgraph.copy()
-
     print("analyzing clusters for suspicious activity")
     analyzed_subgraph = (
         await analyze_communities(updated_subgraph, contract_transactions) or []
@@ -419,24 +233,14 @@ async def process_transactions(network_name: str):
     try:
         persisted_graph = load_graph(
             f"src/g/graphs_two/final_{network_name}_graph.graphml"
-            # f"src/graph/graphs_two/final_graph17.graphml"
         )
 
     except Exception as e:
         persisted_graph = nx.Graph()
 
-    # driver = get_neo4j_driver()
-    # if driver is None:
-    #     print("Failed to get Neo4j driver")
-    #     return
-
     final_graph, previous_community_ids = merge_final_graphs(
         analyzed_subgraph, persisted_graph
     )
-
-    # final_graph, previous_community_ids = merge_final_graphs_neo4j(
-    #     driver, analyzed_subgraph, network_name
-    # )
 
     for node, data in final_graph.nodes(data=True):
         for key, value in list(data.items()):
@@ -461,49 +265,10 @@ async def process_transactions(network_name: str):
         # f"src/graph/graphs_two/final_graph17.graphml"
         f"src/g/graphs_two/final_{network_name}_graph.graphml",
     )
-    # save_graph(
-    #     final_graph,
-    #     f"/Users/andrewworth/Library/Application Support/Neo4j Desktop/Application/relate-data/dbmss/dbms-3022a2a9-de9d-4f32-858b-29e182c70fc0/import/final_{network_name}_graph.graphml",
-    # )
 
-    # neo4j_import_path = "/Users/andrewworth/Library/Application Support/Neo4j Desktop/Application/relate-data/dbmss/dbms-3022a2a9-de9d-4f32-858b-29e182c70fc0/import"
     graphml_filename = f"final_{network_name}_graph.graphml"
-    # graphml_path = os.path.join(neo4j_import_path, graphml_filename)
 
-    # await load_graphml_into_neo4j(driver, network_name)
-    # await parse_and_load_graphml_into_neo4j(driver, network_name)
     print("loaded graph into neo4j")
 
     print("COMPLETE")
     return findings
-
-    # create_graph_query = f"""
-    #     CALL gds.graph.project(
-    #         '{hydraGraph}',
-    #         ['Wallet'],
-    #         {{
-    #             SENT: {{
-    #                 type: 'SENT',
-    #                 properties: ['amount']
-    #             }}
-    #         }}
-    #     )
-    #     """
-    # session.run(create_graph_query)
-    # print(f"Graph {hydraGraph} created.")
-
-    # # Create a filtered graph projection for Wallet nodes without a component ID
-    # hydraGraphFiltered = "WCCGraphFiltered"
-    # session.run(
-    #     f"""
-    #     CALL gds.graph.filter(
-    #         '{hydraGraphFiltered}',
-    #         'hydraGraph',
-    #         'n.componentId IS NULL',
-    #         '*'
-    #     )
-    #     """
-    # )
-    # print(
-    #     f"Filtered graph {hydraGraphFiltered} created for Wallet nodes without a component ID."
-    # )
