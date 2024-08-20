@@ -13,3 +13,6 @@ disco
 dataextract
 Final_LZ_Sybil_Report.csv
 Final_LZ_Sybil_Report.txt
+hydra
+src/extract.py
+src/Final_LZ_Sybil_Report.txt
