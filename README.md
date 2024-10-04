@@ -1,6 +1,6 @@
-## Summary
+## Overview
 
-The Sybil Defender identifies and labels Sybil Attack clusters operating on EVM chains. This includes Ethereum, Arbitrum, Optimism, Polygon, Binance Smart Chain, Avalanche, and Fantom. It monitors transactions to detect patterns that may indicate Sybil behavior, such as Airdrop Farming, Governance Attacks, and Wash Trading/Market Manipulation.
+The Sybil Defender identifies and labels Sybil Attack clusters operating on EVM chains. For now, this includes Ethereum, Arbitrum, Optimism, Polygon, Binance Smart Chain, Avalanche, and Fantom. It monitors transactions to detect patterns that may indicate Sybil behavior, including Airdrop Farming, Governance Attacks, and Wash Trading/Market Manipulation.
 
 ## Features
 

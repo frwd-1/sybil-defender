@@ -69,7 +69,7 @@ async def handle_transaction_async(
     # neo4j-kafka database config option
     if DATABASE_TYPE == "neo4jkafka":
         try:
-            # await publish_transactions_to_kafka(transaction_event)
+            await publish_transactions_to_kafka(transaction_event)
             print(f"transaction committed to Kafka")
         except Exception as e:
             print(f"An error occurred in Kafka: {e}")
