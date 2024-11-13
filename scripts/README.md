@@ -109,3 +109,16 @@ node script.js
 ```
 
 Upon starting, the script will immediately begin fetching data, writing new entries to `TrialRun.csv` and repeating every 60 seconds. It will only log unique, filtered addresses based on the specified typology criteria.
+
+## Typology Descriptions
+
+The script filters addresses based on various typologies, which are labels assigned to addresses exhibiting specific patterns of on-chain behavior. Below are descriptions of the currently available typologies:
+
+Wash Trading:
+Wash Trading labels are assigned to addresses that engage in transactions designed to create the illusion of high trading activity, typically with the aim of artificially inflating the price or perceived demand of an asset. This practice can mislead other participants in the market by simulating liquidity or interest in the asset without genuine market-driven exchange activity.
+
+Asset Farming:
+Asset Farming labels are applied to addresses that demonstrate high-frequency interactions with a project or protocol, where the primary motivation is to accumulate eligibility for potential airdrops or token rewards. These interactions are often repetitive and transactional, lacking substantive engagement with the project aside from the intent to maximize personal gains through farming tactics.
+
+ML: Flow Through:
+ML: Flow Through labels are used for clusters of addresses that appear to intentionally obscure the origin or destination of funds. Such activity is often structured to make on-chain financial flows difficult to trace, possibly with the objective of hiding connections to specific accounts or transactions. This label is frequently applied to Sybil clusters that use complex transfer patterns to mask their activities.
