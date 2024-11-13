@@ -16,3 +16,4 @@ Final_LZ_Sybil_Report.txt
 hydra
 src/extract.py
 src/Final_LZ_Sybil_Report.txt
+scripts/sybil_defender_false_positives.db
