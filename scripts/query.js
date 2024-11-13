@@ -78,7 +78,10 @@ const fetchAndWriteEntitiesToCSV = async (outputFile) => {
         const interactedContracts = metadata.find(str => str.startsWith('interacted contracts='));
         const typologies = label.label.label ? label.label.label.split(',') : [];
 
-        // Check if the only typology is "Wash Trading"
+        // Typologies:
+        // Wash Trading
+        // ML: Flow Through
+        // Asset Farming
         if (typologies.length === 1 && typologies[0] === 'Wash Trading') {
           const wallet = label.label.entity.trim().toLowerCase();
 
