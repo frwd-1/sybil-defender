@@ -55,8 +55,8 @@ const fetchAndWriteEntitiesToCSV = async (outputFile) => {
       let variables = {
         input: {
           sourceIds: ["0x349f4fc9abbd76fdcdb9b0a73b0ef1c3d53935d7ad41a3cf8b8bd32fcf514113"],
-          afterCreatedAtDate: "2024-10-30",
-          beforeCreatedAtDate: "2024-11-01",
+          afterCreatedAtDate: "2024-11-14",
+          // beforeCreatedAtDate: "2024-11-01",
           chainIds: [137],
         },
       };
