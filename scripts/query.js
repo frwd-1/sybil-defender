@@ -1,5 +1,19 @@
 const path = require('path');
-require('dotenv').config({ path: path.resolve(__dirname, '../.env') });
+console.log('GRAPHQL_KEY before dotenv:', process.env.GRAPHQL_KEY);
+const result = require('dotenv').config({ path: path.resolve(__dirname, '../.env') });
+console.log('Dotenv config result:', result);
+if (result.parsed === null || result.parsed === undefined) {
+  console.error('The .env file wasn\'t found or was empty');
+} else if (result.error) {
+  console.error('There was an error loading the file:', result.error);
+}
+
+// Force the environment variable to use the .env value
+if (result.parsed && result.parsed.GRAPHQL_KEY) {
+    process.env.GRAPHQL_KEY = result.parsed.GRAPHQL_KEY;
+}
+
+console.log('GRAPHQL_KEY after override:', process.env.GRAPHQL_KEY);
 const { ApolloClient, InMemoryCache, HttpLink, gql } = require('@apollo/client/core');
 const { setContext } = require('@apollo/client/link/context');
 const fs = require('fs');
@@ -55,7 +69,7 @@ const fetchAndWriteEntitiesToCSV = async (outputFile) => {
       let variables = {
         input: {
           sourceIds: ["0x349f4fc9abbd76fdcdb9b0a73b0ef1c3d53935d7ad41a3cf8b8bd32fcf514113"],
-          afterCreatedAtDate: "2024-11-14",
+          afterCreatedAtDate: "2024-11-12",
           // beforeCreatedAtDate: "2024-11-01",
           chainIds: [137],
         },
